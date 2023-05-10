@@ -1,0 +1,70 @@
+.Posted {
+  background-color: #fff;
+  width: 1769px;
+  height: 1514px;
+}
+.left-posted {
+  width: 20%;
+  background-color: #e84545;
+  height: 100%;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+}
+.nav-bar-posted {
+  position: relative;
+  top: 10%;
+  font-weight: bold;
+  font-size: 2vw;
+}
+.home-posted {
+  margin-bottom: 10%;
+  text-align: center;
+}
+.produce-posted {
+  text-align: center;
+  margin-bottom: 10%;
+}
+.log-out-posted {
+  text-align: center;
+}
+.right-posted {
+  position: fixed;
+  left: 20%;
+  top: 0%;
+  width: 80%;
+  height: 100%;
+}
+.header-posted {
+  height: 10%;
+  width: 100%;
+  background-color: #2b2e4a;
+}
+.header-posted .yourpost {
+  position: relative;
+  font-family: LexendGiga;
+  text-align: justify;
+  font-weight: bold;
+  font-size: 3vw;
+  color: #fff;
+  margin-left: 5%;
+  top: 30%;
+  margin-bottom: 5%;
+}
+.container-posted {
+}
+.container-header-posted {
+  margin-top: 5%;
+  position: relative;
+  left: 5%;
+  font-size: 1.8vw;
+  font-family: Inter;
+}
+.container-header-posted .username-posted {
+  font-size: 1.2vw;
+}
+
+.container-header-posted .Search-your-music-chat {
+  margin-top: 2%;
+  font-size: 1.2vw;
+}
