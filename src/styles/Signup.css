@@ -1,6 +1,6 @@
 .SignUp {
   width: 1440px;
-  height: 1481px;
+  height: 1024px;
 }
 .left-signup {
   position: fixed;
@@ -8,7 +8,7 @@
   left: 0%;
   width: 50%;
   height: 100%;
-  background-color: #fff;
+  background-color: black;
 }
 .right-signup {
   position: fixed;
@@ -83,4 +83,16 @@
   font-weight: bold;
 }
 .user-info-signup .textfield5-signup {
+}
+.SIGN-UP {
+  background-color: #e84545;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 5%;
+  border-radius: 15px;
+  border: solid 1px #000;
+  margin-top: 10%;
+  font-family: Overpass;
+  position: relative;
+  left: 10%;
 }

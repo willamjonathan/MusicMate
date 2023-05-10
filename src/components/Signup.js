@@ -47,14 +47,9 @@ function Signup() {
                     *****
                 </div>
                 
-                {/* <div class = "LogIn">
-                    <div class ='button1'>
-                        LOG IN
-                    </div>
-                    <div class ='create-an-account'>
-                        Create an account
-                    </div>
-                </div> */}
+                <div class = "SIGN-UP">
+                    SIGN UP
+                </div>
                 
             </div>
 
