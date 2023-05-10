@@ -3,17 +3,6 @@ import "../styles/Login.css";
 function Login() {
     return(<div>
         <div class="Login">
-        {/* <span class="MUSIC-MATE">
-        MUSIC MATE
-        </span>
-        <div class="Rectangle-84"></div>
-        <div class="Rectangle-96"></div>
-        <span class="LOG-IN">
-        LOG IN
-        </span>
-        <span class="Create-an-account">
-        Create an account
-        </span> */}
         <div class="left">
             <div class="Title">
                 <div class = "MUSIC-MATE">MUSICMATE</div>

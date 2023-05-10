@@ -1,0 +1,86 @@
+.SignUp {
+  width: 1440px;
+  height: 1481px;
+}
+.left-signup {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+.right-signup {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.Title-signup .MUSIC-MATE-signup {
+  font-weight: bold;
+  font-family: Inter;
+  font-size: 4vw;
+  margin-top: 5%;
+  position: relative;
+  left: 10%;
+}
+.Title-signup .Rectangle-84-signup {
+  width: 80%;
+  height: 0%;
+  font-size: 1vw;
+  background-color: #343434;
+  position: relative;
+  left: 10%;
+}
+.Title-signup .Moto-signup {
+  font-weight: bold;
+  font-family: Inter;
+  font-size: 1.7vw;
+  text-align: center;
+  font-weight: normal;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+.user-info-signup {
+  position: relative;
+  top: 10%;
+  left: 5%;
+  color: black;
+  font-size: 2.7vw;
+  font-family: LexendGiga;
+}
+.user-info-signup .fullname-signup {
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+.user-info-signup .textfield1-signup {
+}
+.user-info-signup .username-signup {
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+.user-info-signup .textfield2-signup {
+}
+.user-info-signup .email-signup {
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+.user-info-signup .textfield3-signup {
+}
+.user-info-signup .password-signup {
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+.user-info-signup .textfield4-signup {
+}
+.user-info-signup .re-enter-password-signup {
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+.user-info-signup .textfield5-signup {
+}
