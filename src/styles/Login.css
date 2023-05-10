@@ -36,8 +36,9 @@
 .Title .Moto {
   font-weight: bold;
   font-family: Inter;
-  font-size: 2vw;
-  font-weight: bold;
+  font-size: 1.7vw;
+  text-align: center;
+  font-weight: normal;
   position: relative;
   top: 0%;
   left: 0%;
