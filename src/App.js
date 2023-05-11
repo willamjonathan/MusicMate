@@ -3,12 +3,14 @@ import './App.css';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Posted from './components/Posted';
+import Home from './components/Home';
 
 function App() {
   return (
     // <Login></Login>
     // <Signup></Signup>
-    <Posted></Posted>
+    // <Posted></Posted>
+    <Home></Home>
   );
 }
 
