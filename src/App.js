@@ -5,6 +5,7 @@ import Signup from './components/Signup';
 import Posted from './components/Posted';
 import Home from './components/Home';
 import Profile from './components/Profile';
+import Premium from './components/Premium';
 // import Fix from './components/Fix';
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
     // <Posted></Posted>
     // <Home></Home>
     // <Fix></Fix>
-    <Profile></Profile>
+    // <Profile></Profile>
+    <Premium></Premium>
   );
 }
 
