@@ -3,6 +3,7 @@ import '../styles/Posted.css'
 function Posted() {
     return(<div>
         <div class ="Posted">
+            
         <div class="left-posted">
             <div class="nav-bar-posted">
                 <div class="home-posted">

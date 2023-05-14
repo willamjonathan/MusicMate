@@ -1,14 +1,159 @@
-import '../styles/Home.css'
+/* .Home {
+  background-color: #fff;
+  width: 1230px;
+  height: 850px;
+  overflow: scroll;
+}
+.left-home {
+  width: 20%;
+  background-color: #e84545;
+  height: 100%;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+}
+.nav-bar-home {
+  position: relative;
+  top: 10%;
+  font-weight: bold;
+  font-size: 2vw;
+}
+.home-home {
+  margin-bottom: 10%;
+  text-align: center;
+}
+.produce-home {
+  text-align: center;
+  margin-bottom: 10%;
+}
+.premium-home {
+  text-align: center;
+  margin-bottom: 10%;
+}
+.log-out-home {
+  text-align: center;
+}
+.right-home {
+  position: fixed;
+  left: 20%;
+  top: 0%;
+  width: 80%;
+  height: 100%;
+}
+.right-home .header-home {
+  position: fixed;
+  top: 0%;
+  height: 50%;
+  width: 100%;
+  background-color: #2b2e4a;
+}
+.right-home .searchbar-home {
+  height: 10%;
+  background-color: #fff;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 70%;
+  position: relative;
+  left: 5%;
+  border-radius: 20px;
+}
+.right-home .jumbotron-home {
+  display: flex;
+  width: 70%;
+  height: 70%;
+  background-color: #fff;
+  position: relative;
+  left: 5%;
+}
+
+.container-home {
+  position: relative;
+  left: 10%;
+  top: 55%;
+  height: 100%;
+}
+
+.viral-home {
+  position: relative;
+  height: 30%;
+}
+.viral-home .viral-text {
+  position: relative;
+  color: #c56464;
+  font-family: LexendGiga;
+  font-size: 1.5vw;
+  font-stretch: expanded;
+  margin-bottom: 2%;
+}
+
+.viral-flex {
+  display: flex;
+  height: 70%;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.music-viral {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  height: 100%;
+  width: 15%;
+  margin-right: 5%;
+  border-radius: 10px;
+  border: solid black 2px;
+}
+
+.music-viral .title-viral {
+  font-size: 1.4vw;
+}
+
+.music-viral .artist-viral {
+  font-size: 1vw;
+}
+.underline-viral {
+  background-color: black;
+  height: 2px;
+  position: relative;
+  top: 20%;
+  left: -10%;
+}
+
+.forum-home {
+  position: fixed;
+  top: 95%;
+  left: 25%;
+  height: 1000 px;
+  overflow-y: auto;
+} */
+
+/* 
+.one-home {
+  height: 100vh;
+}
+.second-home {
+  height: 100vh;
+  display: flex;
+}
+
+.ayam {
+  height: 50%;
+  background-color: red;
+} */
+
+
+import '../styles/Home.css';
 
 function Home(){
     return(
         <div>
-            <div class = "Home">
+            <div class="Home">
+            <section class ="one-home"> 
 
-           
-            <section class="one-home">
-                <div class = "left1-home">
-                <div class="nav-bar-home">
+                
+                <div class="left-home">
+                    <div class="nav-bar-home">
                     <div class="home-home">
                         HOME
                     </div>
@@ -21,9 +166,9 @@ function Home(){
                     <div class="log-out-home">
                         LOG OUT
                     </div>
+            </div>
                 </div>
-                </div>
-                <div class="right1-home">
+                <div class="right-home">
                     <div class ="header-home">
                         <div class="searchbar-home">
                             SEARCH
@@ -91,21 +236,20 @@ function Home(){
                 </div>
             </section>
             <section class = "two-home">
-                <div class = "left2-home">
+            <div class="forum-home">
+                akjsdffffffffffffffffff
+                <div class ="ayam">
                     
-                </div>
-                <div class = "right2-home">
-                        <div class ="forum-home">
-                            FORUM
+                    
+                    </div>                            
 
-                        </div>
-                </div>
-                <h1>Section two</h1>
+            </div>
             </section>
             </div>
+
+
+
         </div>
     )
-
 }
-
 export default Home;

@@ -1,15 +1,20 @@
 .Home {
-  background-color: #fff;
-  width: 1769px;
-  height: 1514px;
+  /* based it on laptop 13 inch */
+  height: 1230px;
+  width: 850px;
 }
-.left-home {
-  width: 20%;
-  background-color: #e84545;
-  height: 100%;
-  position: fixed;
+
+.one-home {
+  height: 100vh;
+}
+.left1-home {
+  position: absolute;
   left: 0%;
   top: 0%;
+  width: 20%;
+  background-color: #e84545;
+  height: 100vh;
+  font-family: LexendGiga;
 }
 .nav-bar-home {
   position: relative;
@@ -32,39 +37,41 @@
 .log-out-home {
   text-align: center;
 }
-.right-home {
-  position: fixed;
+
+.right1-home {
+  position: absolute;
   left: 20%;
   top: 0%;
+  height: 100vh;
   width: 80%;
-  height: 100%;
 }
-.right-home .header-home {
-  position: fixed;
+.right1-home .header-home {
+  position: absolute;
   top: 0%;
   height: 50%;
   width: 100%;
   background-color: #2b2e4a;
 }
-.right-home .searchbar-home {
+.right1-home .searchbar-home {
   height: 10%;
   background-color: #fff;
   margin-top: 2%;
   margin-bottom: 2%;
-  width: 70%;
+  width: 80%;
   position: relative;
-  left: 5%;
+  left: 10%;
   border-radius: 20px;
 }
-.right-home .jumbotron-home {
+
+.right1-home .jumbotron-home {
   display: flex;
-  width: 70%;
+  width: 80%;
   height: 70%;
   background-color: #fff;
   position: relative;
-  left: 5%;
+  left: 10%;
+  border-radius: 20px;
 }
-
 .container-home {
   position: relative;
   left: 10%;
@@ -89,6 +96,7 @@
   display: flex;
   height: 70%;
   width: 100%;
+  margin-bottom: 5%;
 }
 
 .music-viral {
@@ -116,4 +124,28 @@
   position: relative;
   top: 20%;
   left: -10%;
+}
+.two-home {
+  height: 600px;
+}
+.left2-home {
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  width: 20%;
+  height: 600px;
+  background-color: #e84545;
+}
+
+.right2-home {
+  position: absolute;
+  left: 20%;
+  top: 100%;
+  width: 80%;
+  height: 600px;
+}
+
+.forum-home {
+  position: relative;
+  left: 10%;
 }
