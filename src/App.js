@@ -10,8 +10,8 @@ function App() {
   return (
     // <Login></Login>
     // <Signup></Signup>
-    // <Posted></Posted>
-    <Home></Home>
+    <Posted></Posted>
+    // <Home></Home>
     // <Fix></Fix>
   );
 }
