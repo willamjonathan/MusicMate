@@ -2,7 +2,7 @@
   width: 850px;
   height: 1230px;
 }
-
+/* 
 .left-premium {
   width: 20%;
   background-color: #e84545;
@@ -11,6 +11,7 @@
   left: 0%;
   top: 0%;
 }
+
 .nav-bar-premium {
   position: relative;
   top: 10%;
@@ -32,7 +33,7 @@
 }
 .log-out-premium {
   text-align: center;
-}
+} */
 .right-premium {
   position: absolute;
   left: 20%;

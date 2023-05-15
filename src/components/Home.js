@@ -1,5 +1,6 @@
 import '../styles/Home.css'
 import '../styles/Link.css'
+import LeftSelection from './Leftsection';
 import React, { useEffect, useState } from "react";
 // import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
@@ -10,7 +11,7 @@ function Home(){
             <div class = "Home">
            
             <section class="one-home">
-                <div class = "left1-home">
+                {/* <div class = "left1-home">
                 <div class="nav-bar-home">
                     <div class="home-home">
                     <Link to ="/home" className="link">HOME</Link>
@@ -25,7 +26,8 @@ function Home(){
                     <Link to ="/" className="link">LOG OUT</Link>
                     </div>
                 </div>
-                </div>
+                </div> */}
+                <LeftSelection></LeftSelection>
                 <div class="right1-home">
                     <div class ="header-home">
                         <div class="searchbar-home">

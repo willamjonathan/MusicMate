@@ -6,6 +6,7 @@ import Posted from './components/Posted';
 import Home from './components/Home';
 import Profile from './components/Profile';
 import Premium from './components/Premium';
+import LeftSelection from './components/Leftsection';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // import Fix from './components/Fix';
