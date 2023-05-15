@@ -1,6 +1,7 @@
 import "../styles/Signup.css"
 import React, { useEffect, useState } from "react";
 import '../styles/Link.css'
+import '../styles/Textfield.css'
 
 
 function Signup() {
@@ -24,7 +25,7 @@ function Signup() {
                 </div>
             </div> 
             <div class = "user-info-signup">
-                <div class="fullname-signup">
+                <div class="subtext">
                     Full-name
                 </div>
                 <div class="text-field1-signup">
@@ -36,7 +37,7 @@ function Signup() {
                     placeholder="Full-name"
                     />
                 </div>
-                <div class="username-signup">
+                <div class="subtext">
                     Username
                 </div>
                 <div class ="text-field2-signup">
@@ -48,7 +49,7 @@ function Signup() {
                     placeholder="Username"
                     />
                 </div>
-                <div class="email-signup">
+                <div class="subtext">
                     Email
                 </div>
                 <div class="text-field3-signup">
@@ -60,7 +61,7 @@ function Signup() {
                     placeholder="Email"
                     />
                 </div>
-                <div class="password-signup">
+                <div class="subtext">
                     Password
                 </div>
                 <div class ="text-field4-signup">
@@ -72,7 +73,7 @@ function Signup() {
                     placeholder="Password"
                     />
                 </div>
-                <div class="re-enter-password-signup">
+                <div class="subtext">
                     Re-enter Password
                 </div>
                 <div class ="text-field5-signup">

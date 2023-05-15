@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 // import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import '../styles/Link.css'
+import '../styles/Textfield.css'
 
 function Login() {
 const[username,setUsername]=useState("");
@@ -27,7 +28,7 @@ const[password,setPassword]=useState("");
                 <div class="text-field1">
                     <input
                     type = "text"
-                    className="username-textfield1-login"
+                    className="username-textfield1-login textfield"
                     value={username}
                     onChange={(e)=>setUsername(e.target.value)}
                     placeholder="Username"
@@ -39,7 +40,7 @@ const[password,setPassword]=useState("");
                 <div class ="text-field2">
                 <input
                     type="text"
-                    className="password-textfield2-login"
+                    className="password-textfield2-login textfield"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="Password"
