@@ -6,22 +6,6 @@ import LeftSelection from './Leftsection';
 function Premium(){
     return(<div>
         <div class="Premium">
-            {/* <div class="left-premium">
-            <div class="nav-bar-premium">
-                <div class="home-premium">
-                <Link to ="/home" className="link">HOME</Link>
-                </div>
-                <div class="produce-premium">
-                <Link to ="/" className="link">PRODUCE</Link>
-                </div>
-                <div class ="premium-premium">
-                <Link to ="/premium" className="link">PREMIUM</Link>
-                </div>
-                <div class="log-out-premium">
-                <Link to ="/" className="link">LOG OUT</Link>
-                </div>
-            </div>
-            </div> */}
             <LeftSelection></LeftSelection>
             <div class="right-premium">
             <div class="header-premium">

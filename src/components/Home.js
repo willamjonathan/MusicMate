@@ -1,5 +1,6 @@
 import '../styles/Home.css'
 import '../styles/Link.css'
+import BigHeader from './BigHeader';
 import LeftSelection from './Leftsection';
 import React, { useEffect, useState } from "react";
 // import { useAuthState } from "react-firebase-hooks/auth";
@@ -13,32 +14,9 @@ function Home(){
             <div class = "Home">
            
             <section class="one-home">
-                {/* <div class = "left1-home">
-                <div class="nav-bar-home">
-                    <div class="home-home">
-                    <Link to ="/home" className="link">HOME</Link>
-                    </div>
-                    <div class="produce-home">
-                    <Link to ="/" className="link">PRODUCE</Link>
-                    </div>
-                    <div class ="premium-home">
-                    <Link to ="/premium" className="link">PREMIUM</Link>
-                    </div>
-                    <div class="log-out-home">
-                    <Link to ="/" className="link">LOG OUT</Link>
-                    </div>
-                </div>
-                </div> */}
                 <LeftSelection></LeftSelection>
                 <div class="right1-home">
-                    <div class ="header-home">
-                        <div class="searchbar-home">
-                            SEARCH
-                        </div>
-                        <div class="jumbotron-home">
-                            
-                        </div>
-                    </div>
+                    <BigHeader></BigHeader>
                     <div class="container-home">
                         <div class="viral-home">
                             <div class ="viral-text">

@@ -28,7 +28,6 @@ function Signup() {
                 <div class="subtext">
                     Full-name
                 </div>
-                <div class="text-field1-signup">
                     <input
                     type="text"
                     className="fullname-txt textfield"
@@ -36,11 +35,10 @@ function Signup() {
                     onChange={(e) => setFullname(e.target.value)}
                     placeholder="Full-name"
                     />
-                </div>
+
                 <div class="subtext">
                     Username
                 </div>
-                <div class ="text-field2-signup">
                 <input
                     type="text"
                     className="username-txt textfield "
@@ -48,11 +46,9 @@ function Signup() {
                     onChange={(e) => setUsername(e.target.value)}
                     placeholder="Username"
                     />
-                </div>
                 <div class="subtext">
                     Email
                 </div>
-                <div class="text-field3-signup">
                 <input
                     type="text"
                     className="email-txt textfield"
@@ -60,11 +56,9 @@ function Signup() {
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Email"
                     />
-                </div>
                 <div class="subtext">
                     Password
                 </div>
-                <div class ="text-field4-signup">
                 <input
                     type="text"
                     className="password-txt textfield"
@@ -72,11 +66,9 @@ function Signup() {
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="Password"
                     />
-                </div>
                 <div class="subtext">
                     Re-enter Password
                 </div>
-                <div class ="text-field5-signup">
                 <input
                     type="text"
                     className="re-enter-txt textfield"
@@ -84,8 +76,6 @@ function Signup() {
                     onChange={(e) => setReenter(e.target.value)}
                     placeholder="Re-enter password"
                     />
-                </div>
-                
                 <div class = "SIGN-UP">
                     SIGN UP
                 </div>

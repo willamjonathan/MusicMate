@@ -7,71 +7,12 @@
 .one-home {
   height: 100vh;
 }
-/* 
-.left1-home {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  width: 20%;
-  background-color: #e84545;
-  height: 100vh;
-  font-family: LexendGiga;
-}
-.nav-bar-home {
-  position: relative;
-  top: 10%;
-  font-weight: bold;
-  font-size: 2vw;
-}
-.home-home {
-  margin-bottom: 10%;
-  text-align: center;
-}
-.produce-home {
-  text-align: center;
-  margin-bottom: 10%;
-}
-.premium-home {
-  text-align: center;
-  margin-bottom: 10%;
-}
-.log-out-home {
-  text-align: center;
-} */
-
 .right1-home {
   position: absolute;
   left: 20%;
   top: 0%;
   height: 100vh;
   width: 80%;
-}
-.right1-home .header-home {
-  position: absolute;
-  top: 0%;
-  height: 50%;
-  width: 100%;
-  background-color: #2b2e4a;
-}
-.right1-home .searchbar-home {
-  height: 10%;
-  background-color: #fff;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  width: 80%;
-  position: relative;
-  left: 10%;
-  border-radius: 20px;
-}
-
-.right1-home .jumbotron-home {
-  display: flex;
-  width: 80%;
-  height: 70%;
-  background-color: #fff;
-  position: relative;
-  left: 10%;
-  border-radius: 20px;
 }
 .container-home {
   position: relative;

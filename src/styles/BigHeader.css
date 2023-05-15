@@ -1,0 +1,38 @@
+.header-home {
+  position: absolute;
+  top: 0%;
+  height: 50%;
+  width: 100%;
+  background-color: #2b2e4a;
+}
+.search-section {
+  width: 90%;
+  position: relative;
+  left: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.search-bar {
+  font-size: 4vh;
+  width: 88%;
+  border-radius: 20px;
+}
+.profile-icon {
+  width: 4%;
+  position: absolute;
+  left: 92%;
+  top: 2%;
+  background-color: gray;
+  height: 100%;
+  border-radius: 50%;
+}
+.jumbotron-home {
+  display: flex;
+  width: 80%;
+  height: 70%;
+  background-color: #fff;
+  position: relative;
+  left: 10%;
+  border-radius: 20px;
+}

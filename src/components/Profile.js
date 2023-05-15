@@ -1,21 +1,12 @@
 import '../styles/Profile.css'
 import '../styles/Link.css'
+import { Link, useNavigate } from "react-router-dom";
+import LeftSelection from './Leftsection';
+
 function Profile(){
     return(<div>
         <div class="Profile">
-            <div class ="left-profile">
-            <div class="nav-bar-profile">
-                <div class="home-profile">
-                    HOME
-                </div>
-                <div class="produce-profile">
-                    PRODUCE
-                </div>
-                <div class="log-out-profile">
-                    LOG OUT
-                </div>
-            </div>
-            </div>
+            <LeftSelection/>
             <div class="right-profile">
                 <div class="header-profile">
                     <div class ="profile-profile">Profile</div>
