@@ -2,16 +2,19 @@
   width: 1230px;
   height: 850px;
 }
+.one-signup {
+  height: 100vh;
+}
 .left-signup {
-  position: fixed;
+  position: absolute;
   top: 0%;
   left: 0%;
   width: 50%;
-  height: 100%;
+  height: 100vh;
   background-color: black;
 }
 .right-signup {
-  position: fixed;
+  position: absolute;
   top: 0%;
   right: 0%;
   width: 50%;
@@ -55,34 +58,40 @@
   font-family: LexendGiga;
 }
 .user-info-signup .fullname-signup {
-  margin-bottom: 3%;
+  margin-bottom: 2%;
   font-weight: bold;
 }
 .user-info-signup .textfield1-signup {
 }
 .user-info-signup .username-signup {
-  margin-bottom: 3%;
+  margin-bottom: 2%;
   font-weight: bold;
 }
 .user-info-signup .textfield2-signup {
 }
 .user-info-signup .email-signup {
-  margin-bottom: 3%;
+  margin-bottom: 2%;
   font-weight: bold;
 }
 .user-info-signup .textfield3-signup {
 }
 .user-info-signup .password-signup {
-  margin-bottom: 3%;
+  margin-bottom: 2%;
   font-weight: bold;
 }
 .user-info-signup .textfield4-signup {
 }
 .user-info-signup .re-enter-password-signup {
-  margin-bottom: 3%;
+  margin-bottom: 2%;
   font-weight: bold;
 }
 .user-info-signup .textfield5-signup {
+}
+
+.textfield {
+  font-size: 2vw;
+  border-radius: 10px;
+  width: 80%;
 }
 .SIGN-UP {
   background-color: #e84545;
@@ -96,3 +105,8 @@
   position: relative;
   left: 10%;
 }
+/* .free-space {
+  height: 40px;
+  width: 100%;
+  background-color: black;
+} */

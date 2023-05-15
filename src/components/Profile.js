@@ -1,5 +1,5 @@
 import '../styles/Profile.css'
-
+import '../styles/Link.css'
 function Profile(){
     return(<div>
         <div class="Profile">

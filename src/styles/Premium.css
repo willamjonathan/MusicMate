@@ -1,3 +1,8 @@
+.Premium {
+  width: 850px;
+  height: 1230px;
+}
+
 .left-premium {
   width: 20%;
   background-color: #e84545;
@@ -11,12 +16,17 @@
   top: 10%;
   font-weight: bold;
   font-size: 2vw;
+  font-family: LexendGiga;
 }
 .home-premium {
   margin-bottom: 10%;
   text-align: center;
 }
 .produce-premium {
+  text-align: center;
+  margin-bottom: 10%;
+}
+.premium-premium {
   text-align: center;
   margin-bottom: 10%;
 }

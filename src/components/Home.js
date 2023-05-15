@@ -1,25 +1,28 @@
 import '../styles/Home.css'
+import '../styles/Link.css'
+import React, { useEffect, useState } from "react";
+// import { useAuthState } from "react-firebase-hooks/auth";
+import { Link, useNavigate } from "react-router-dom";
 
 function Home(){
     return(
         <div>
             <div class = "Home">
-
            
             <section class="one-home">
                 <div class = "left1-home">
                 <div class="nav-bar-home">
                     <div class="home-home">
-                        HOME
+                    <Link to ="/home" className="link">HOME</Link>
                     </div>
                     <div class="produce-home">
-                        PRODUCE
+                    <Link to ="/" className="link">PRODUCE</Link>
                     </div>
                     <div class ="premium-home">
-                        PREMIUM
+                    <Link to ="/premium" className="link">PREMIUM</Link>
                     </div>
                     <div class="log-out-home">
-                        LOG OUT
+                    <Link to ="/" className="link">LOG OUT</Link>
                     </div>
                 </div>
                 </div>

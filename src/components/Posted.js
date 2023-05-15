@@ -1,5 +1,5 @@
 import '../styles/Posted.css'
-
+import '../styles/Link.css'
 function Posted() {
     return(<div>
         <div class ="Posted">

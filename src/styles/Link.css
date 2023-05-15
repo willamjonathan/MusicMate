@@ -1,0 +1,14 @@
+.link {
+  color: black; /* default link color */
+  text-decoration: none; /* remove underline */
+}
+
+.link:hover {
+  color: blue; /* link color when hovered over */
+  text-decoration: underline; /* add underline when hovered over */
+}
+
+.link.active {
+  color: green; /* link color when it is the active link */
+  text-decoration: underline; /* add underline when it is the active link */
+}

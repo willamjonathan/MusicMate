@@ -1,4 +1,6 @@
 import '../styles/Premium.css'
+import '../styles/Link.css'
+import { Link, useNavigate } from "react-router-dom";
 
 function Premium(){
     return(<div>
@@ -6,13 +8,16 @@ function Premium(){
             <div class="left-premium">
             <div class="nav-bar-premium">
                 <div class="home-premium">
-                    HOME
+                <Link to ="/home" className="link">HOME</Link>
                 </div>
                 <div class="produce-premium">
-                    PRODUCE
+                <Link to ="/" className="link">PRODUCE</Link>
+                </div>
+                <div class ="premium-premium">
+                <Link to ="/premium" className="link">PREMIUM</Link>
                 </div>
                 <div class="log-out-premium">
-                    LOG OUT
+                <Link to ="/" className="link">LOG OUT</Link>
                 </div>
             </div>
             </div>

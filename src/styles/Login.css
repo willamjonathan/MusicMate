@@ -67,6 +67,13 @@
 .user-info .textfield1 {
   font-size: 3vw;
 }
+.username-textfield1-login {
+  padding: 10px;
+  font-size: 3vw;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
 .user-info .password {
   margin-top: 5%;
   font-family: LexendGiga;
@@ -76,6 +83,13 @@
 .user-info .textfield2 {
   font-size: 3vw;
 }
+.password-textfield2-login {
+  padding: 10px;
+  font-size: 3vw;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
 .user-info .LogIn {
   margin-top: 10%;
   font-family: Overpass;
