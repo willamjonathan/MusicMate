@@ -1,23 +1,16 @@
 import '../styles/Posted.css'
 import '../styles/Link.css'
+import './Leftsection'
+import LeftSelection from './Leftsection';
+import React, { useEffect, useState } from "react";
+
 function Posted() {
+
+    const[searchChat,setSearchChat]=useState("")
     return(<div>
         <div class ="Posted">
             
-        <div class="left-posted">
-            <div class="nav-bar-posted">
-                <div class="home-posted">
-                    HOME
-                </div>
-                <div class="produce-posted">
-                    PRODUCE
-                </div>
-                <div class="log-out-posted">
-                    LOG OUT
-                </div>
-            </div>
-
-        </div>
+        <LeftSelection></LeftSelection>
         <div class = "right-posted">
             <div class="header-posted">
                 <div class="yourpost"> YOUR POST</div>
@@ -35,8 +28,14 @@ function Posted() {
                         <div class="Search-your-music-chat">
                             Search your music chat!
                         </div>
-                        <div class="Search-bar">
-
+                        <div class="Search-music-chat">
+                            <input
+                                type="text"
+                                className="search-bar"
+                                value={searchChat}
+                                onChange={(e) => setSearchChat(e.target.value)}
+                                placeholder="Search"
+                            />
                         </div>
                     </div>
                 </div>

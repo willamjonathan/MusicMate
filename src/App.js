@@ -22,6 +22,7 @@ function App() {
           <Route exact path="/profile" element={<Profile/>} />
           <Route exact path="/posted" element={<Posted/>} />
           <Route exact path="/premium" element={<Premium/>} />
+          <Route exact path="/posted" element={<Posted/>} />
         </Routes>
       </Router>
       </div>  

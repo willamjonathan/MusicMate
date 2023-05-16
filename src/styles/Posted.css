@@ -17,17 +17,6 @@
   font-weight: bold;
   font-size: 2vw;
 }
-.home-posted {
-  margin-bottom: 10%;
-  text-align: center;
-}
-.produce-posted {
-  text-align: center;
-  margin-bottom: 10%;
-}
-.log-out-posted {
-  text-align: center;
-}
 .right-posted {
   position: absolute;
   left: 20%;
@@ -67,4 +56,5 @@
 .container-header-posted .Search-your-music-chat {
   margin-top: 2%;
   font-size: 1.2vw;
+  margin-bottom: 2%;
 }
