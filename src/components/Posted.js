@@ -6,13 +6,28 @@ import React, { useEffect, useState } from "react";
 
 
 
+
 function Posted() {
 
     const[searchChat,setSearchChat]=useState("")
     const [isOpen, setIsOpen] = useState(false);
     const [title,setTitle] = useState("");
     const [description,setDescription]=useState("");
-    const [attachment, setAttachment]=useState("");
+    const [selectedFile, setSelectedFile] = useState(null);
+
+    const handleFileSelect = (event) => {
+        setSelectedFile(event.target.files[0]);
+    };
+
+    const handleUpload = () => {
+        if (selectedFile) {
+        // Perform upload logic here, such as sending the file to a server
+        console.log('Uploading file:', selectedFile);
+        } else {
+        console.log('No file selected.');
+        }
+    };
+    // const [attachment, setAttachment]=useState("");
 
     const togglePopup = () => {
       setIsOpen(!isOpen);
@@ -89,8 +104,13 @@ function Posted() {
                                         onChange={(e) => setDescription(e.target.value)}
                                         placeholder="Description"
                                     />
+                                    <input type="file" onChange={handleFileSelect} />
+                                    <div class = "popup-footer">
                                     
                                     <button onClick={togglePopup}>Close</button>
+
+                                    <button className="post-tweet" onClick={handleUpload}>Upload</button>
+                                    </div>
                                     </div>
                                 )}
                         </div>
