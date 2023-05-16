@@ -1,0 +1,19 @@
+.Welcome {
+  width: 850px;
+  height: 1230px;
+}
+
+.start {
+  font-size: 2vw;
+  font-family: LexendGiga;
+  color: #fff;
+  background-color: #334b76;
+  width: 30%;
+  text-align: center;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+/* 263f6b */

@@ -6,6 +6,7 @@ import Posted from './components/Posted';
 import Home from './components/Home';
 import Profile from './components/Profile';
 import Premium from './components/Premium';
+import Welcome from './components/Welcome';
 import LeftSelection from './components/Leftsection';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -16,7 +17,8 @@ function App() {
     <div className='app'>
     <Router>
         <Routes>
-          <Route exact path="/" element={<Login/>} />
+          <Route exact path="/" element={<Welcome/>} />
+          <Route exact path="/login" element={<Login/>} />
           <Route exact path="/signup" element={<Signup/>} />
           <Route exact path="/home" element={<Home/>} />
           <Route exact path="/profile" element={<Profile/>} />

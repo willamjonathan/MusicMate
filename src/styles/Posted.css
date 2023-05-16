@@ -1,22 +1,16 @@
 .Posted {
   background-color: #fff;
   width: 1230px;
-  height: 850px;
+  height: 1000px;
 }
-.left-posted {
-  width: 20%;
-  background-color: #e84545;
-  height: 100%;
-  position: absolute;
-  left: 0%;
-  top: 0%;
-}
-.nav-bar-posted {
-  position: relative;
-  top: 10%;
-  font-weight: bold;
-  font-size: 2vw;
-}
+
+/* .one-posted {
+  height: 100vh;
+} */
+/* .two-posted {
+  height: 600px;
+} */
+
 .right-posted {
   position: absolute;
   left: 20%;
@@ -41,6 +35,7 @@
   margin-bottom: 5%;
 }
 .container-posted {
+  height: 100%;
 }
 .container-header-posted {
   margin-top: 5%;
@@ -52,9 +47,59 @@
 .container-header-posted .username-posted {
   font-size: 1.2vw;
 }
-
-.container-header-posted .Search-your-music-chat {
+.search-posted {
+  width: 100%;
+}
+.container-header-posted .search-your-music-chat {
   margin-top: 2%;
   font-size: 1.2vw;
   margin-bottom: 2%;
+}
+.search-music-chat {
+  margin-bottom: 2%;
+  width: 100%;
+}
+.search-bar {
+  font-size: 2vw;
+}
+.Filter-NewPost {
+  width: 100%;
+  height: 5%;
+}
+.filter-btn {
+  font-size: 1vw;
+  margin-right: 2%;
+  border-radius: 10px;
+  background-color: #dedede;
+  border: 1px solid #dedede;
+}
+
+.newpost__btn {
+  background-color: #e84545;
+  font-size: 1.5vw;
+  color: #fff;
+  position: relative;
+  border-radius: 30px;
+  left: 45%;
+  width: 17%;
+}
+
+.underline {
+  width: 100%;
+  background-color: black;
+  margin-top: 2%;
+  height: 3px;
+}
+.two-posted-right {
+  position: absolute;
+  left: 20%;
+}
+.title {
+  font-size: 2.5vh;
+}
+.description {
+  width: 60%;
+  height: 10%;
+  margin-bottom: 2%;
+  font-size: 2vh;
 }

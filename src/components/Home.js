@@ -76,9 +76,6 @@ function Home(){
                 </div>
             </section>
             <section class = "two-home">
-                <div class = "left2-home">
-                    
-                </div>
                 <div class = "right2-home">
                         <div class ="forum-home">
                             FORUM
