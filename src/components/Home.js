@@ -82,7 +82,7 @@ function Home(){
 
                         </div>
                 </div>
-                <h1>Section two</h1>
+                {/* <h1>Section two</h1> */}
             </section>
             </div>
         </div>
