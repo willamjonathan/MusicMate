@@ -19,12 +19,12 @@ const PostTask =({title, setTitle, description,
                     onChange={(e) => setDescription(e.target.value)}
                     placeholder="Description"
                 />
-                <input type="file" onChange={handleFileSelect} />
+                <input className="post-btn" type="file" onChange={handleFileSelect} />
                 <div class = "popup-footer">
                                     
-                                    <button onClick={togglePopup}>Close</button>
+                                    <button className="post-btn"onClick={togglePopup}>Close</button>
 
-                                    <button className="post-tweet" onClick={handleUpload}>Upload</button>
+                                    <button className="post-btn" onClick={handleUpload}>Upload</button>
                 </div>
 
             </>

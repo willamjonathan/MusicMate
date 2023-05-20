@@ -14,7 +14,7 @@ function LeftSelection(){
                 <Link to ="/posted" className="link">POSTED</Link>
                 </div>
                 <div class="produce-navbar">
-                <Link to ="/" className="link">PRODUCE</Link>
+                <Link to ="/home" className="link">PRODUCE</Link>
                 </div>
                 <div class ="premium-navbar">
                 <Link to ="/premium" className="link">PREMIUM</Link>
