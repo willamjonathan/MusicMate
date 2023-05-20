@@ -105,12 +105,52 @@
 }
 .popup-footer {
 }
-
-.icon {
+.post-post {
+}
+.your-post {
+  margin-top: 3%;
   position: absolute;
-  top: 50%;
+  width: 90%;
+  left: 5%;
+}
+
+.post-post {
+  background-color: #555;
+  border-radius: 6px;
+  /* margin: 20px; */
+  padding: 10px 10px 10px 15px;
+  text-align: left;
+  font-size: 22px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.post-title {
+  font-size: 1.5vh;
+}
+
+.post-description {
+  font-size: 1vh;
+}
+.post-file {
+  font-size: 0.8vh;
+}
+.icon {
+  /* position: absolute; */
+  /* top: 50%;
   transform: translateY(-50%);
   right: 15px;
   width: auto;
+  display: inline-block; */
+}
+.icon span {
   display: inline-block;
+  margin: 0px 10px 0 10px;
+  cursor: pointer;
+}
+.post-underline {
+  height: 2px;
+  width: 100%;
+  background-color: black;
 }

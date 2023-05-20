@@ -160,10 +160,7 @@ function Posted() {
                 </div>
                 <div class ="underline">
                 </div>
-                
-            </div>
-        </div>
-        <div class ="your-post">
+                <div class ="your-post">
         <Post
                     post ={post}
                     // commentP = {commentP}
@@ -171,6 +168,10 @@ function Posted() {
                     deleteP={deleteP}
                 />  
         </div>
+            </div>
+            
+        </div>
+       
         </div>
         {/* </section> */}
         {/* <section class ="two-posted">

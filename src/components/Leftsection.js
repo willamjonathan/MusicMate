@@ -20,7 +20,7 @@ function LeftSelection(){
                 <Link to ="/premium" className="link">PREMIUM</Link>
                 </div>
                 <div class="log-out-navbar">
-                <Link to ="/login" className="link">LOG OUT</Link>
+                <Link to ="/login" className="link">LOGOUT</Link>
                 </div>
             </div>
 
