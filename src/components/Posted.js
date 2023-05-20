@@ -3,26 +3,37 @@ import '../styles/Link.css'
 import './Leftsection'
 import LeftSelection from './Leftsection';
 import React, { useEffect, useState } from "react";
+import PostTask from './PostTask';
 
 
 
 
 function Posted() {
-
+// the state
+    // const [post,setPost] = useState([])
+    // const [allPost, setAllPost ]= useState([])
+    
+    
+// temp state
     const[searchChat,setSearchChat]=useState("")
     const [isOpen, setIsOpen] = useState(false);
     const [title,setTitle] = useState("");
     const [description,setDescription]=useState("");
     const [selectedFile, setSelectedFile] = useState(null);
 
+    // // temp state
+    // const [create,setCreate] = useState('');
+
     const handleFileSelect = (event) => {
         setSelectedFile(event.target.files[0]);
     };
 
     const handleUpload = () => {
-        if (selectedFile) {
+        if (((title) && (description))||((title) && (description)&& (selectedFile)) ) {
         // Perform upload logic here, such as sending the file to a server
         console.log('Uploading file:', selectedFile);
+        togglePopup()
+        // postT()
         } else {
         console.log('No file selected.');
         }
@@ -32,6 +43,17 @@ function Posted() {
     const togglePopup = () => {
       setIsOpen(!isOpen);
     };
+//     // Add Post
+//   const postT = () => {
+//     if((title) && (description)){
+//       let num = post.length +1;
+//       let newEntry = { id:num, title: title, description: description, selectedfile : selectedFile}
+//       setPost([...post, newEntry])
+//       setTitle('');
+//       setDescription('');
+//       setSelectedFile(null);
+//     }
+//   } 
 
     return(<div>
         <div class ="Posted">            
@@ -88,6 +110,16 @@ function Posted() {
                                 </button>
                                 {isOpen && (
                                     <div className="popup">
+                                    {/* <PostTask
+                                    title={title}
+                                    setTitle= {setTitle}
+                                    description = {description}
+                                    setDescription ={setDescription}
+                                    handleFileSelect = {handleFileSelect}
+                                    togglePopup = {togglePopup}
+                                    handleUpload = {handleUpload}
+                                    /> */}
+                                 
                                     <h2>Title</h2>
                                     <input
                                         type="text"
