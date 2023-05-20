@@ -2,6 +2,9 @@ import "../styles/Signup.css"
 import React, { useEffect, useState } from "react";
 import '../styles/Link.css'
 import '../styles/Textfield.css'
+import { Link, useNavigate } from "react-router-dom";
+import SignUpImage from '../img/SignUpImage.jpg';
+
 
 
 function Signup() {
@@ -12,7 +15,13 @@ function Signup() {
     const[reenter,setReenter]=useState("");
     return(<div>
         <div class="SignUp">
-            <div class ="left-signup">
+            <div class ="left-signup"
+            style={{
+                backgroundImage: `url(${SignUpImage})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center center',
+                height: '100vh',
+              }}>
 
             </div>
             <div class = "right-signup">
@@ -78,6 +87,9 @@ function Signup() {
                     />
                 <div class = "SIGN-UP">
                     SIGN UP
+                </div>
+                <div class ='login-now'>
+                Already have an account? <Link to="/login" className="link">Login</Link> now.
                 </div>
                 {/* <div class="free-space">
                     

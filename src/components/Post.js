@@ -1,11 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faCircleCheck, faPen, faTrashCan
+    faThumbsUp, faComment, faTrashCan
 } from '@fortawesome/free-solid-svg-icons'
 
 const Post = ({post
-    // , commentP ,likeP
+    , commentP ,likeP
     , deleteP }) => {
     return(<>
     {post && post
@@ -23,25 +23,28 @@ const Post = ({post
                 <div className="post-file">
                     {p.selectedFile}
                 </div>
-                <div className =" post-underline"></div>
+                
                 <div className = "icon">
-                    {/* <span onClick = {()=> commentP(p.id)} title="Comment">
-                    <FontAwesomeIcon icon ={faCircleCheck}/>
+                    <span onClick = {()=> commentP(p.id)} title="Comment">
+                    <FontAwesomeIcon icon ={faComment}/>
                     </span>
                     <span onClick ={()=> likeP(p.id)} title ="Like">
-                    <FontAwesomeIcon icon ={faPen}/>
-                    </span> */}
+                    <FontAwesomeIcon icon ={faThumbsUp}/>
+                    </span>
                     <span onClick ={()=> deleteP(p.id)} title ="delete">
                     <FontAwesomeIcon icon ={faTrashCan}/>
                     </span>
                 </div>
-                <div className =" post-underline">
 
-                </div>
-
+                
             </div>
             
+
+            
             </div>
+            <div className =" post-underline">
+
+                </div>
         </React.Fragment>)
     })
     

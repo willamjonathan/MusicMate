@@ -48,7 +48,7 @@ const[password,setPassword]=useState("");
                 </div>
                 <div class = "LogIn">
                     <div class ='button1'>
-                        LOG IN
+                        LOGIN
                     </div>
                     <div class ='create-an-account'>
                         <Link to ="/signup" className="link">Create an account</Link>

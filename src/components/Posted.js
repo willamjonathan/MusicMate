@@ -59,11 +59,21 @@ function Posted() {
     }
   } 
 
-// Remove
+    // Remove
     const deleteP = (id) => {
         let createTasks = post.filter ( p => p.id !== id)
         setPost(createTasks);
     } 
+
+    // Latest
+    const FilterLatest = (id) =>{
+        
+    }
+    // Like
+    const FilterLike = () =>{
+
+    }
+    
 
     return(<div>
         <div class ="Posted">            

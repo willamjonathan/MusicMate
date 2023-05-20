@@ -6,7 +6,7 @@
   height: 100vh;
 }
 .left-signup {
-  position: absolute;
+  position: fixed;
   top: 0%;
   left: 0%;
   width: 50%;
@@ -68,6 +68,14 @@
   font-family: Overpass;
   position: relative;
   left: 10%;
+}
+.login-now {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  left: -10%;
+  font-size: 1.7vw;
+  font-family: LexendGiga;
 }
 /* .free-space {
   height: 40px;
