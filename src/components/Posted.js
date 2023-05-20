@@ -4,13 +4,14 @@ import './Leftsection'
 import LeftSelection from './Leftsection';
 import React, { useEffect, useState } from "react";
 import PostTask from './PostTask';
+import Post from './Post';
 
 
 
 
 function Posted() {
 // the state
-    // const [post,setPost] = useState([])
+    const [post,setPost] = useState([])
     // const [allPost, setAllPost ]= useState([])
     
     
@@ -33,7 +34,7 @@ function Posted() {
         // Perform upload logic here, such as sending the file to a server
         console.log('Uploading file:', selectedFile);
         togglePopup()
-        // postT()
+        postT()
         } else {
         console.log('No file selected.');
         }
@@ -43,17 +44,26 @@ function Posted() {
     const togglePopup = () => {
       setIsOpen(!isOpen);
     };
-//     // Add Post
-//   const postT = () => {
-//     if((title) && (description)){
-//       let num = post.length +1;
-//       let newEntry = { id:num, title: title, description: description, selectedfile : selectedFile}
-//       setPost([...post, newEntry])
-//       setTitle('');
-//       setDescription('');
-//       setSelectedFile(null);
-//     }
-//   } 
+
+// LOGIC -ADD, DELETE, LIKE, COMMENT
+
+    // Add Post
+  const postT = () => {
+    if((title) && (description)){
+      let num = post.length +1;
+      let newEntry = { id:num, title: title, description: description, selectedfile : selectedFile}
+      setPost([...post, newEntry])
+      setTitle('');
+      setDescription('');
+      setSelectedFile(null);
+    }
+  } 
+
+// Remove
+    const deleteP = (id) => {
+        let createTasks = post.filter ( p => p.id !== id)
+        setPost(createTasks);
+    } 
 
     return(<div>
         <div class ="Posted">            
@@ -110,7 +120,7 @@ function Posted() {
                                 </button>
                                 {isOpen && (
                                     <div className="popup">
-                                    {/* <PostTask
+                                    <PostTask
                                     title={title}
                                     setTitle= {setTitle}
                                     description = {description}
@@ -118,9 +128,9 @@ function Posted() {
                                     handleFileSelect = {handleFileSelect}
                                     togglePopup = {togglePopup}
                                     handleUpload = {handleUpload}
-                                    /> */}
+                                    />
                                  
-                                    <h2>Title</h2>
+                                    {/* <h2>Title</h2>
                                     <input
                                         type="text"
                                         className="title"
@@ -142,18 +152,25 @@ function Posted() {
                                     <button onClick={togglePopup}>Close</button>
 
                                     <button className="post-tweet" onClick={handleUpload}>Upload</button>
-                                    </div>
+                                    </div> */}
                                     </div>
                                 )}
                         </div>
                     </div>
                 </div>
                 <div class ="underline">
-                            
                 </div>
+                
             </div>
         </div>
-        
+        <div class ="your-post">
+        <Post
+                    post ={post}
+                    // commentP = {commentP}
+                    // likeP = {likeP}
+                    deleteP={deleteP}
+                />  
+        </div>
         </div>
         {/* </section> */}
         {/* <section class ="two-posted">
