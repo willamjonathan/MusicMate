@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 import PostForm from './PostForm';
 import Post from './Post';
 import PostList from './PostList';
+// import "./PostListStyle.css";
 
 
 function Posted() {
@@ -79,7 +80,7 @@ function Posted() {
         <LeftSelection></LeftSelection>
         <div class = "right-posted">
             <div class="header-posted">
-                <div class="yourpost"> YOUR POST</div>
+                <div class="yourpost"> TIMELINE</div>
             </div>
             <div class = "container-posted">
                 <div class="container-header-posted">
@@ -139,17 +140,7 @@ function Posted() {
                     <PostForm/>
                     <PostList/>
                 </div>
-                <div class ="underline">
-                </div>
-                <div class ="your-post">
-        <Post
-                    post ={post}
-                    // commentP = {commentP}
-                    // likeP = {likeP}
-                    deleteP={deleteP}
-                />  
-        </div>
-        
+    
             </div>
             
         </div>

@@ -1,40 +1,3 @@
-// const PostTask =({title, setTitle, description,
-//     setDescription,handleFileSelect, togglePopup, handleUpload
-//     } )=> {
-//         return(
-//             <>
-//             <h2>Title</h2>
-//                 <form>
-//                 <input
-//                     type="text"
-//                     className="title"
-//                     value={title}
-//                     onChange={(e) => setTitle(e.target.value)}
-//                     placeholder="Title"
-//                 />
-//                 <h3>Description</h3>
-//                 <input
-//                     type="text"
-//                     className="description"
-//                     value={description}
-//                     onChange={(e) => setDescription(e.target.value)}
-//                     placeholder="Description"
-//                 />
-//                 <input className="post-btn" type="file" onChange={handleFileSelect} />
-//                 <div class = "popup-footer">
-                                    
-//                                     <button className="post-btn"onClick={togglePopup}>Close</button>
-
-//                                     <button className="post-btn" onClick={handleUpload} type ='submit'>Upload</button>
-//                 </div>
-//                 </form>
-//             </>
-
-//         )
-// }
-// export default PostTask;
-
-// import React, { useState } from 'react';
 import axios from 'axios';
 import React, { useState, useEffect } from "react";
 
@@ -145,12 +108,11 @@ function PostForm() {
 
   return (
     <div>
-      <h1>{message}</h1>
       {error && <p>{error}</p>}
 
       <form onSubmit={handleSubmit} encType="multipart/form-data">
         <label>
-          Search term:
+          Title:
           <input type="text" name="searchTerm" value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} />
         </label>
         <label>
