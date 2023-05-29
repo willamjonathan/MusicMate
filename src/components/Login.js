@@ -158,34 +158,57 @@ function Login() {
                 </form>
                 
             </div> */}
-                <h2>{isLoginMode ? "Login" : "Sign Up"}</h2>
-                {errorMessage && <p className="error-message">{errorMessage}</p>}
-                {successMessage && <p className="success-message">{successMessage}</p>}
+                <div class ="user-info">
+                <h2>{isLoginMode ? "LOGIN" : "SIGN UP"}</h2>
+                
                 <form onSubmit={handleFormSubmit}>
                     <div>
-                    <label>Email:</label>
+                    <div class="username">
+                    Email:</div>
                     <input
+                    className="username-textfield1-login textfield"
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
                     </div>
                     <div>
-                    <label>Password:</label>
+                    <div class="password">Password:</div>
                     <input
+                    className="password-textfield2-login textfield"
                         type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
                     </div>
-                    <button type="submit">{isLoginMode ? "Login" : "Sign Up"}</button>
-                </form>
-                <p>
+                    <div class ="error-message-login">
+                    {errorMessage && <p className="error-message">{errorMessage}</p>}
+                {successMessage && <p className="success-message">{successMessage}</p>}
+                </div>
+                
+                {/* <p>
                     {isLoginMode ? "Don't have an account? " : "Already have an account? "}
                     <span onClick={() => setIsLoginMode(!isLoginMode)}>
                     {isLoginMode ? "Sign Up" : "Login"}
                     </span>
-                </p>
+                </p> */}
+                <div class = "LogIn">
+                    <div class ='button1'>
+                        <button type ='submit' className = 'btn'>{isLoginMode ? "Login" : "Sign Up"}</button>
+
+                    </div>
+                    <div class ='create-an-account'>
+                      <div class = "link-login">
+                    {isLoginMode ? "Don't have an account? " : "Already have an account? "}
+                    <span onClick={() => setIsLoginMode(!isLoginMode)}>
+                    {isLoginMode ? "Sign Up" : "Login"}
+                    </span>
+                    </div>
+                        {/* <Link to ="/signup" className="link link-login">Create an account</Link> */}
+                    </div>
+                </div>
+                </form>
+                </div>
         </div>
         </div>
         

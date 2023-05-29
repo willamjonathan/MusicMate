@@ -69,7 +69,7 @@
   position: relative;
   left: 5%;
   /* top: -30%; */
-  top: 20%;
+  top: 0%;
   color: #fff;
   font-size: 3vw;
 }
@@ -95,7 +95,7 @@
 } */
 
 .user-info .LogIn {
-  margin-top: 10%;
+  margin-top: 3%;
   font-family: Overpass;
   position: relative;
   left: 10%;
@@ -118,7 +118,15 @@
 }
 .link-login {
   color: #fff;
+  cursor: pointer;
 }
-.create-an-account link {
+.link-login span:hover {
+  color: gray;
+}
+
+.error-message-login {
+  font-size: 1vw;
   color: white;
+  position: relative;
+  left: 3%;
 }
