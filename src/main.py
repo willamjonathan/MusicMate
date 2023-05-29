@@ -8,7 +8,7 @@ import datetime
 
 #table
 from sqlalchemy.orm import sessionmaker
-from Models import Base,UserActivity
+# from Models import Base,UserActivity
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, Column, Integer, String, DateTime, func
 from fastapi import FastAPI, Depends, HTTPException

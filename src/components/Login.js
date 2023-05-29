@@ -74,11 +74,11 @@ function Login() {
           // Example: Display success message
           // setSuccessMessage(data.message);
         } else {
-          throw new Error("Error occurred during signup");
+          throw new Error("User already exist");
         }
       } catch (error) {
         console.error(error);
-        setErrorMessage("Error occurred during signup");
+        setErrorMessage("User already exist");
         setSuccessMessage("");
       }
     }
