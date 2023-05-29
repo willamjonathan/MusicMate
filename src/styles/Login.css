@@ -74,6 +74,7 @@
   font-size: 3vw;
 }
 .user-info .username {
+  margin-top: 10%;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 3%;
   font-weight: bold;
