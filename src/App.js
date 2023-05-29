@@ -10,6 +10,7 @@ import Welcome from './components/Welcome';
 import LeftSelection from './components/Leftsection';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Produce from './components/Produce ';
+import UserPostPage from './components/UserPostPage';
 
 // import Fix from './components/Fix';
 
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/premium" element={<Premium/>} />
           <Route exact path="/posted" element={<Posted/>} />
           <Route exact path ="/produce" element = {<Produce/>}/>
+          <Route exact path ="/user-post-page" element = {<UserPostPage/>}/>
         </Routes>
       </Router>
       {/* <Produce></Produce> */}
