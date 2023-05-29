@@ -10,29 +10,38 @@ input[type="text"] {
   }
   
   /* Style for the tweets container */
-  div {
+  .waduh {
     background-color: #f2f2f2;
-    padding: 20px;
+    padding-left: 20px;
     border-radius: 4px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    font-style: bold;
   }
   
   /* Style for the tweet search term */
   h2 {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 10px;
+    color: #2b272bfb;
+    font-style: normal;
+  }
+
+  h1{
+    font-size: 20px;
   }
   
   /* Style for the tweet text */
   p {
     font-size: 16px;
     margin: 10px 0;
+    color: #555;
   }
   
   /* Style for the tweet love */
   h3 {
     font-size: 18px;
     margin: 20px 0 10px 0;
+    color: #777;
   }
   
   /* Style for the like/dislike button */
@@ -48,6 +57,11 @@ input[type="text"] {
     margin-right: 10px;
     cursor: pointer;
     border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
   }
   
   /* Style for the comment form */
@@ -82,18 +96,19 @@ input[type="text"] {
   }
   
   /* Style for the comment container */
-  div {
+  .comment-container {
     margin-top: 20px;
   }
   
   /* Style for the comment paragraph */
-  p {
+  .comment-container p {
     font-size: 16px;
     margin: 10px 0;
+    color: #555;
   }
   
   /* Style for the show/hide comments button */
-  button {
+  .comment-container button {
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -105,6 +120,11 @@ input[type="text"] {
     margin-top: 10px;
     cursor: pointer;
     border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .comment-container button:hover {
+    background-color: #45a049;
   }
   
   .username {
@@ -113,6 +133,25 @@ input[type="text"] {
   
   .username:hover {
     opacity: 0.4;
-    color : royalblue
+    color: royalblue;
   }
   
+  .love-container {
+    display: flex;
+    align-items: center;
+    size: 5px;
+  }
+  
+  .love-container h3,
+  .love-container .love-symbol {
+    display: inline;
+    margin-right: 5px;
+  }
+
+  .love-symbol {
+    font-size: 25px; /* Adjust the font size as desired */
+  }
+  
+  .bar{
+    padding-top: 522px;
+  }
