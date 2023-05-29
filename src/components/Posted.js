@@ -8,7 +8,6 @@ import Post from './Post';
 
 
 
-
 function Posted() {
 // the state
     const [post,setPost] = useState([])
@@ -92,24 +91,31 @@ function Posted() {
                         {/* nanti harus diganti ke pake use use apa la itu */}
                     </div>
                     <div class="search-posted">
+                    <form>
                         <div class="search-your-music-chat">
                             Search your music chat!
                         </div>
                         <div class="search-music-chat">
+                        
+                            <span class ="search-bar-container">
                             <input
                                 type="text"
                                 className="search-bar"
                                 value={searchChat}
                                 onChange={(e) => setSearchChat(e.target.value)}
                                 placeholder="Search"
-                            />
+                            /></span>
+                            <span class ="search-bar-container2">
+                            <button type="submit" class="search-btn">Search</button></span>
+                          
                         </div>
+                        </form> 
                         <div class="Filter-NewPost">
-                            <button
+                            {/* <button
                                 className="completed__btn filter-btn"    
                             >
                                 Completed
-                                </button>
+                                </button> */}
                                 <button
                                 className="like__btn filter-btn"    
                             >

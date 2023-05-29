@@ -6,7 +6,7 @@
   background-color: #2b2e4a;
 }
 .search-section {
-  width: 90%;
+  width: 88%;
   position: relative;
   left: 10%;
   margin-top: 2%;
@@ -14,25 +14,88 @@
 }
 
 .search-bar {
-  font-size: 4vh;
+  height: 4vh;
+  font-size: 2vw;
   width: 88%;
   border-radius: 20px;
+  /* padding */
 }
-.profile-icon {
-  width: 4%;
+.search-btn-bigheader {
   position: absolute;
   left: 92%;
   top: 2%;
-  background-color: gray;
   height: 100%;
   border-radius: 50%;
+  font-size: 1vw;
 }
+
+.search-btn-bh {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  font-size: 1.3vw;
+  height: 100%;
+  cursor: pointer;
+}
+
+.search-btn-bh:hover {
+  opacity: 75%;
+}
+/* .profile-icon {
+  position: absolute;
+  left: 92%;
+  top: 2%;
+  height: 100%;
+  border-radius: 50%;
+  font-size: 2.5vw;
+}
+.profileicon {
+  color: black;
+}
+.profileicon:hover {
+  color: gray;
+} */
 .jumbotron-home {
+  border: 2px solid black;
   display: flex;
   width: 80%;
   height: 70%;
-  background-color: #fff;
   position: relative;
   left: 10%;
   border-radius: 20px;
+  overflow: hidden;
+  background-image: url("../img/jumbotronimg/jumbo5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  animation: change 20s infinite ease-in-out;
+  /* background-image: url("../img/SignUpImage.jpg"),
+    url("../img/BackgroundImage.png");
+  background-repeat: no-repeat;
+  background-position: top left, center, bottom right;
+  background-size: cover, contain, auto; */
+}
+
+@keyframes change {
+  0% {
+    background-image: url("../img/jumbotronimg/jumbo1.jpeg");
+  }
+  20% {
+    background-image: url("../img/jumbotronimg/jumbo2.jpeg");
+  }
+  40% {
+    background-image: url("../img/jumbotronimg/jumbo3.jpeg");
+  }
+  60% {
+    background-image: url("../img/jumbotronimg/jumbo4.jpeg");
+  }
+  80% {
+    background-image: url("../img/jumbotronimg/jumbo5.png");
+  }
+  100% {
+    background-image: url("../img/jumbotronimg/jumbo6.jpg");
+  }
 }

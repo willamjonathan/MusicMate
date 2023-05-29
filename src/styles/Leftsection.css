@@ -5,31 +5,104 @@
   width: 20%;
   background-color: #e84545;
   height: 100vh;
-  font-family: LexendGiga;
+  font-family: "Open Sans", sans-serif;
 }
+
+/* #800000 */
 .nav-bar {
   position: relative;
   top: 10%;
   font-weight: bold;
   font-size: 2vw;
-  font-family: LexendGiga;
+  /* font-family: "Open Sans", sans-serif; */
+  overflow: auto;
+  width: 100%;
+  /* padding: 20px; */
+  height: auto;
+
+  /* background-color: white; */
+}
+.sp {
+  height: 2vh;
+}
+.header-navbar {
+  position: relative;
+  left: 5%;
+  font-size: 3vw;
+  color: white;
+  background-color: #800000;
+  height: 10%;
+  margin-bottom: 20%;
+  border-radius: 10px;
+  width: 90%;
+}
+/* .header-navbar span {
+  margin-right: 5%;
+} */
+.title-header-navbar {
+  font-size: 2vw;
+  position: relative;
+  left: 10%;
+  margin-right: 5%;
+}
+.logo-header-navbar {
+  color: black;
+  position: relative;
+  left: 10%;
+}
+.edit-button {
+  position: relative;
+  padding: 10px;
+  font-size: 1vw;
+  background-color: #a52a2a;
+  width: auto;
+  border-radius: 20px;
+  height: auto;
+  font-weight: bold;
+  color: white;
+  left: 10%;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+.edit-button-decoration {
+  text-decoration: none;
+  color: white;
+}
+.edit-button :hover {
+  opacity: 50%;
+}
+
+.nav-bar .choice {
+  display: block;
+  color: black;
+  /* padding-left: 16px; */
+  text-decoration: none;
+  width: auto;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.nav-bar .choice:hover {
+  position: relative;
+  left: 10%;
+  background-color: #800000;
+  color: white;
+  width: 90%;
+  border-radius: 50px 0 0 50px;
+  text-align: center;
 }
 .home-navbar {
   margin-bottom: 10%;
-  text-align: center;
 }
 .posted-navbar {
   margin-bottom: 10%;
-  text-align: center;
 }
 .produce-navbar {
-  text-align: center;
   margin-bottom: 10%;
 }
 .premium-navbar {
-  text-align: center;
   margin-bottom: 10%;
 }
 .log-out-navbar {
-  text-align: center;
 }

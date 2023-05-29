@@ -16,19 +16,19 @@ function Profile(){
                         
                     </div>
                     <div class ="details-profile">
-                        <div class ="name-profile">
+                        <div class ="name-profile textprofile">
                             Name:
                         </div>
                         <div class="textfield1-profile">
                             *****
                         </div>
-                        <div class ="username-profile">
+                        <div class ="username-profile textprofile">
                             Username:
                         </div>
                         <div class="textfield2-profile">
                              *****
                         </div>
-                        <div class ="email-profile">
+                        <div class ="email-profile textprofile">
                             Email:
                         </div>
                         <div class="textfield3- profile">

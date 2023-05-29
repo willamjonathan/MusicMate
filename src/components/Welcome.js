@@ -15,7 +15,7 @@ function Welcome(){
       }}
       >
         <div class ="start">
-        <Link to ="/login" className="link">TRY MUSICMATE</Link>
+        <Link to ="/login" className="link link-bh">TRY MUSICMATE</Link>
             
         </div>
 

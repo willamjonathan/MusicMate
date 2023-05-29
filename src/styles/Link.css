@@ -1,5 +1,5 @@
 .link {
-  color: black; /* default link color */
+  /* color: black; default link color */
   text-decoration: none; /* remove underline */
 }
 
@@ -7,8 +7,26 @@
   color: gray; /* link color when hovered over */
   text-decoration: none; /* add underline when hovered over */
 }
+.link-bh {
+  color: black;
+}
+.btn {
+  font-size: 2.7vw;
+  text-align: center;
+  /* background-color: #e84545; */
+  width: 80%;
+  padding: 20px;
+  margin-bottom: 5%;
+  border-radius: 150px;
+  border: solid 1px #000;
+  margin-top: 10%;
+  cursor: pointer;
+}
 
-.link.active {
-  color: green; /* link color when it is the active link */
-  text-decoration: underline; /* add underline when it is the active link */
+.btn:hover {
+  color: #2b2e4a;
+  /* background-color: #e84545; */
+  /* background-color: white; */
+  opacity: 75%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

@@ -22,53 +22,65 @@ function Home(){
                             <div class ="viral-text">
                                     VIRAL
                                 </div>
+                                <div class="underline-viral">
                                 <div class ="viral-flex">
-                                    <div class ="music-viral">
-                                        <div class="picture-viral">
-
+                                    <div class ="music-viral ">
+                                        <div class="picture-viral will">
+                                            
                                         </div>
                                         <div class="title-viral">
-                                            Igor
+                                            Do re mi 
                                         </div>
                                         <div class ="artist-viral">
-                                            Tyler The Creator
+                                            William
                                         </div>
                                     </div>
-                                    <div class ="music-viral">
-                                        2
-                                        <div class="picture-viral">
+                                    <div class ="music-viral ">
+                                        <div class="picture-viral andrean">
                                         </div>
                                         <div class="title-viral">
-                                            Starboy
+                                            satu dua tiga
                                         </div>
                                         <div class ="artist-viral">
-                                            The Weekend
+                                            Andrean
                                         </div>    
                                     </div>
-                                    <div class ="music-viral">3
-                                    <div class="picture-viral">
+                                    <div class ="music-viral">
+                                    <div class="picture-viral josh">
                                         </div>
                                         <div class="title-viral">
-                                            Party Day
+                                        4 sehat
                                         </div>
                                         <div class ="artist-viral">
-                                            X
+                                            Joshua
                                         </div>
                                     </div>
-                                    <div class ="music-viral">4
-                                    <div class="picture-viral">
+                                    <div class ="music-viral">
+                                    <div class="picture-viral sir">
 
                                     </div>
                                     <div class="title-viral">
-                                        POWER
+                                        quiz dadakan
                                     </div>
                                     <div class ="artist-viral">
-                                        Twice
+                                        Bagus
                                     </div>
                                     
                                     </div>
+                                    {/* <div class ="music-viral">
+                                    <div class="picture-viral sir">
+
+                                    </div>
+                                    <div class="title-viral">
+                                        quiz dadakan
+                                    </div>
+                                    <div class ="artist-viral">
+                                        Bagus
+                                    </div>
+                                    
+                                    </div> */}
                                 </div>
-                            <div class="underline-viral">
+                            
                                 
                             </div>
                             </div>

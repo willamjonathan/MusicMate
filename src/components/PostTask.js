@@ -4,6 +4,7 @@ const PostTask =({title, setTitle, description,
         return(
             <>
             <h2>Title</h2>
+                <form>
                 <input
                     type="text"
                     className="title"
@@ -24,9 +25,9 @@ const PostTask =({title, setTitle, description,
                                     
                                     <button className="post-btn"onClick={togglePopup}>Close</button>
 
-                                    <button className="post-btn" onClick={handleUpload}>Upload</button>
+                                    <button className="post-btn" onClick={handleUpload} type ='submit'>Upload</button>
                 </div>
-
+                </form>
             </>
 
         )

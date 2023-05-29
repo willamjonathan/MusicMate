@@ -4,6 +4,7 @@ import '../styles/Link.css'
 import '../styles/Textfield.css'
 import { Link, useNavigate } from "react-router-dom";
 import SignUpImage from '../img/SignUpImage.jpg';
+import MMLogo from '../img/MM-Logo.png'
 
 
 
@@ -25,7 +26,15 @@ function Signup() {
 
             </div>
             <div class = "right-signup">
-
+            <div class = "mmlogo-signup"
+                style={{
+                    backgroundImage: `url(${MMLogo})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center center',
+                    height: '25%',
+                    width:'25%'
+                  }}
+                >.</div> 
             <div class="Title-signup">
                 <div class = "MUSIC-MATE-signup">MUSICMATE</div>
                 <div class="Rectangle-84-signup"> .</div>
@@ -34,15 +43,16 @@ function Signup() {
                 </div>
             </div> 
             <div class = "user-info-signup">
+                <form>
                 <div class="subtext">
-                    Full-name
+                    Full name
                 </div>
                     <input
                     type="text"
                     className="fullname-txt textfield"
                     value={fullname}
                     onChange={(e) => setFullname(e.target.value)}
-                    placeholder="Full-name"
+                    placeholder="Full name"
                     />
 
                 <div class="subtext">
@@ -86,14 +96,15 @@ function Signup() {
                     placeholder="Re-enter password"
                     />
                 <div class = "SIGN-UP">
-                    SIGN UP
+                    <button type ='submit' className="btn">SIGN UP</button>
                 </div>
                 <div class ='login-now'>
-                Already have an account? <Link to="/login" className="link">Login</Link> now.
+                Already have an account? <Link to="/login" className="link link-bh">Login</Link> now.
                 </div>
                 {/* <div class="free-space">
                     
                 </div> */}
+                </form>
             </div>
 
 

@@ -1,0 +1,17 @@
+.animated-textfield {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.animated-textfield label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.animated-textfield.focused label {
+  transform: translateY(-25px) scale(0.8);
+  color: #1976d2;
+}
