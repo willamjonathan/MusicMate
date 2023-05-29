@@ -8,8 +8,81 @@ import MMLogo from '../img/MM-Logo.png'
 import LoginBG from '../img/Login-leftbg.png'
 
 function Login() {
-const[username,setUsername]=useState("");
-const[password,setPassword]=useState("");
+// const[username,setUsername]=useState("");
+// const[password,setPassword]=useState("");
+  
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [isLoginMode, setIsLoginMode] = useState(true);
+  const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
+  const navigate = useNavigate();
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+
+    if (isLoginMode) {
+      // Make login request
+      const loginData = { email, password };
+
+      try {
+        const response = await fetch("http://localhost:8000/login", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(loginData),
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          console.log(data.access_token);
+          setErrorMessage("");
+          setSuccessMessage("Login successful");
+
+          // Add the access token to local storage
+          localStorage.setItem("access_token", data.access_token);
+
+          // TODO: Handle login success (e.g., redirect, store access token)
+          // Example: Redirect to dashboard page
+          // history.push("/dashboard");
+          navigate(`/home`);
+        } else {
+          throw new Error("Incorrect email or password");
+        }
+      } catch (error) {
+        console.error(error);
+        setErrorMessage("Incorrect email or password");
+        setSuccessMessage("");
+      }
+    } else {
+      // Make signup request
+      const signupData = { email, password };
+
+      try {
+        const response = await fetch("http://localhost:8000/signup", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(signupData),
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          console.log(data.message);
+          setErrorMessage("");
+          setSuccessMessage("User signup successful");
+
+          // TODO: Handle signup success (e.g., display success message, redirect)
+          // Example: Display success message
+          // setSuccessMessage(data.message);
+        } else {
+          throw new Error("Error occurred during signup");
+        }
+      } catch (error) {
+        console.error(error);
+        setErrorMessage("Error occurred during signup");
+        setSuccessMessage("");
+      }
+    }
+};
 
     return(<div>
         <div class="Login">
@@ -44,17 +117,10 @@ const[password,setPassword]=useState("");
                 
             </div>
         </div>
+
         <div class = "right">
-            {/* <div class = "mmlogo"
-                style={{
-                    backgroundImage: `url(${MMLogo})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center center',
-                    height: '60%',
-                    width:'70%'
-                  }}
-                >.</div> */}
-            <div class = "user-info">
+
+            {/* <div class = "user-info">
                 <form>
                 <div class="username">
                     USERNAME
@@ -83,7 +149,7 @@ const[password,setPassword]=useState("");
                 <div class = "LogIn">
                     <div class ='button1'>
                         <button type ='submit' className = 'btn'>LOGIN</button>
-                        {/* <Link to ="/home" className= "link">LOGIN</Link> */}
+
                     </div>
                     <div class ='create-an-account'>
                         <Link to ="/signup" className="link link-login">Create an account</Link>
@@ -91,7 +157,35 @@ const[password,setPassword]=useState("");
                 </div>
                 </form>
                 
-            </div>
+            </div> */}
+                <h2>{isLoginMode ? "Login" : "Sign Up"}</h2>
+                {errorMessage && <p className="error-message">{errorMessage}</p>}
+                {successMessage && <p className="success-message">{successMessage}</p>}
+                <form onSubmit={handleFormSubmit}>
+                    <div>
+                    <label>Email:</label>
+                    <input
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    </div>
+                    <div>
+                    <label>Password:</label>
+                    <input
+                        type="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                    </div>
+                    <button type="submit">{isLoginMode ? "Login" : "Sign Up"}</button>
+                </form>
+                <p>
+                    {isLoginMode ? "Don't have an account? " : "Already have an account? "}
+                    <span onClick={() => setIsLoginMode(!isLoginMode)}>
+                    {isLoginMode ? "Sign Up" : "Login"}
+                    </span>
+                </p>
         </div>
         </div>
         
