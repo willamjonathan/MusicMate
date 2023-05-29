@@ -99,6 +99,13 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.singer-storyline {
+  background-image: url("../img/Singer.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .music-viral .title-viral {
   font-size: 1.4vw;
 }
@@ -112,7 +119,7 @@
   width: 100%;
   right: 10%;
   height: 80%;
-  padding: 20px;
+  padding: 30px;
   border-bottom: 5px solid black;
   /* overflow-x: scroll;
   overflow-y: hidden; */
@@ -138,13 +145,104 @@
 
 .right2-home {
   position: absolute;
-  left: 20%;
-  top: 100%;
+  left: 30%;
+  top: 95%;
   width: 80%;
   height: 600px;
 }
 
 .forum-home {
+  height: 100%;
+}
+.berita-title {
+  font-size: 3vw;
+  position: relative;
+  /* left: 5%; */
+  margin-bottom: 2%;
+  font-weight: bold;
+  display: flex;
+}
+.berita-title-a {
+  color: #e84545;
+}
+.berita-title-b {
+  color: #2b2e4a;
+}
+
+.berita-container {
+  height: 60vh;
+  padding-bottom: 5%;
+  width: 80%;
+  /* background-color: gray; */
+  /* background-color: red; */
+  /* background-color: #2b2e4a; */
+  border-radius: 20px;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.3), 0 8px 30px 0 rgba(0, 0, 0, 0.25);
+}
+
+.title-berita-isi {
+  padding-top: 3%;
+  font-size: 2.2vw;
+  text-align: center;
+  font-weight: 700;
+}
+
+.berita-detail {
+  font-weight: 500;
+  font-size: 1.3vw;
   position: relative;
   left: 10%;
+}
+
+.berita-detail li {
+  list-style: none;
+}
+.pict-storyline {
+  position: relative;
+  left: 35%;
+  width: 30%;
+  height: 50%;
+  border-radius: 20px;
+}
+
+.berita-storyline {
+  height: 30vh;
+  overflow-y: scroll;
+  width: 80%;
+  position: relative;
+  left: 10%;
+  font-size: 1vw;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow-x: hidden;
+
+  /* display: flex; */
+}
+.pict-and-story {
+  /* display: flex; */
+}
+.berita-storyline p {
+  position: relative;
+  /* top: -70%; */
+  left: 2%;
+  width: 98%;
+}
+.p-satu {
+  /* width: 50%;
+  text-align: left;
+  position: relative;
+  left: 45%;
+  top: -70%; */
+}
+.whitespace {
+  margin-top: 5%;
+  height: 10%;
+  background-color: white;
+  width: 100%;
+}
+
+.berita-container:hover {
+  /* Add other transform properties for the desired 3D effect */
+  box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.3),
+    0 16px 60px 0 rgba(0, 0, 0, 0.25);
 }

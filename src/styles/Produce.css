@@ -29,15 +29,16 @@
   height: 5%;
   display: flex;
   text-align: center;
-  color: white;
+  color: #2b2e4a;
   font-size: 2vw;
+  font-weight: 600;
 }
 .button-produce span {
   cursor: pointer;
 }
 .lite-produce {
   width: 42.5%;
-  background-color: blue;
+  background-color: white;
   border-radius: 50px;
 }
 .premium-produce {
