@@ -3,9 +3,9 @@ import '../styles/Link.css'
 import './Leftsection'
 import LeftSelection from './Leftsection';
 import React, { useEffect, useState } from "react";
-import PostTask from './PostTask';
+import PostForm from './PostForm';
 import Post from './Post';
-
+import PostList from './PostList';
 
 
 function Posted() {
@@ -83,14 +83,15 @@ function Posted() {
             </div>
             <div class = "container-posted">
                 <div class="container-header-posted">
-                    <div class="Welcome-posted">
+                    {/* <div class="Welcome-posted">
                         <h1>WELCOME!</h1>
                     </div>
                     <div class="username-posted">
                         asep
-                        {/* nanti harus diganti ke pake use use apa la itu */}
-                    </div>
-                    <div class="search-posted">
+
+                    </div> */}
+
+                    {/* <div class="search-posted">
                     <form>
                         <div class="search-your-music-chat">
                             Search your music chat!
@@ -109,34 +110,19 @@ function Posted() {
                             <button type="submit" class="search-btn">Search</button></span>
                           
                         </div>
-                        </form> 
-                        <div class="Filter-NewPost">
-                            {/* <button
-                                className="completed__btn filter-btn"    
-                            >
-                                Completed
-                                </button> */}
-                                <button
-                                className="like__btn filter-btn"    
-                            >
-                                Like
-                                </button>
-                                <button
-                                className="latest__btn filter-btn "    
-                            >
-                                Latest
-                                </button>
+                        </form> /
+                    </div> */}
+                    {/* <div class="Filter-NewPost">
                                 <button
                                     className="newpost__btn "
                                     onClick={togglePopup}    
                                 >
                                     New Post
-                                {/* <Popup>New Post</Popup> */}
-                                
+
                                 </button>
                                 {isOpen && (
                                     <div className="popup">
-                                    <PostTask
+                                    <PostList
                                     title={title}
                                     setTitle= {setTitle}
                                     description = {description}
@@ -146,33 +132,12 @@ function Posted() {
                                     handleUpload = {handleUpload}
                                     />
                                  
-                                    {/* <h2>Title</h2>
-                                    <input
-                                        type="text"
-                                        className="title"
-                                        value={title}
-                                        onChange={(e) => setTitle(e.target.value)}
-                                        placeholder="Title"
-                                    />
-                                    <h3>Description</h3>
-                                    <input
-                                        type="text"
-                                        className="description"
-                                        value={description}
-                                        onChange={(e) => setDescription(e.target.value)}
-                                        placeholder="Description"
-                                    />
-                                    <input type="file" onChange={handleFileSelect} />
-                                    <div class = "popup-footer">
-                                    
-                                    <button onClick={togglePopup}>Close</button>
 
-                                    <button className="post-tweet" onClick={handleUpload}>Upload</button>
-                                    </div> */}
                                     </div>
                                 )}
-                        </div>
-                    </div>
+                        </div> */}
+                    <PostForm/>
+                    <PostList/>
                 </div>
                 <div class ="underline">
                 </div>
@@ -184,6 +149,7 @@ function Posted() {
                     deleteP={deleteP}
                 />  
         </div>
+        
             </div>
             
         </div>
