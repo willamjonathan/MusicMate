@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useReducer } from "react";
 import fetch from "isomorphic-fetch";
 import { v4 as uuidv4 } from "uuid";
-import "./PostListStyle.css"
+import "../styles/PostListStyle.css"
 import MusicPlayer from "./MusicPlayer";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";

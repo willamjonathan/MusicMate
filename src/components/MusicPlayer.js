@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
-import "./music.css"
+import "../styles/music.css"
 
 const MusicPlayer = ({ musicUrl }) => {
   const [fileExists, setFileExists] = useState(true);
