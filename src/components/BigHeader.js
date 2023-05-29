@@ -25,7 +25,7 @@ function BigHeader(){
                             
                             />
                         <div class="search-btn-bigheader">   
-                        <button type="submit" class="search-btn-bh">Search</button>
+                        <button type="submit" class="search-btn-bh sbh">Search</button>
 
                         
                         </div>

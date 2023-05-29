@@ -174,7 +174,7 @@ function PostList() {
           <p key={comment}>{comment}</p>
         ))}
         {comments.length > 3 && !showAll && (
-          <button onClick={handleClick}>Show all comments</button>
+          <button onClick={handleClick} >Show all comments</button>
         )}
         {showAll && (
           <button onClick={handleClick}>Hide comments</button>
@@ -206,9 +206,9 @@ function PostList() {
       <form onSubmit={handleCommentSubmit}>
         <label>
           Comment:
-          <input type="text" value={commentInput} onChange={handleCommentInputChange} />
+          <input className ="Timeline-input"type="text" value={commentInput} onChange={handleCommentInputChange} />
         </label>
-        <button type="submit">Add Comment</button>
+        <button type="submit" class ="btn-a">Add Comment</button>
       </form>
     );
   }
@@ -221,7 +221,7 @@ function PostList() {
   return (
     <div className="waduh">
         <input
-            className="bar"
+            className="bar Timeline-input"
             type="text"
             placeholder="Search tweets by search term"
             value={searchTerm}

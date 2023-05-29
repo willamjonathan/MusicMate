@@ -109,6 +109,10 @@
   font-weight: bold;
   background-color: gray;
 }
+.btn:hover {
+  font-weight: bold;
+  background-color: gray;
+}
 .create-an-account {
   position: relative;
   text-align: center;
