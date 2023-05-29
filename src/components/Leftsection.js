@@ -5,18 +5,32 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faUserCircle
 } from '@fortawesome/free-solid-svg-icons'
+import axios from "axios";
+import React, { useState, useEffect} from "react";
 
 function LeftSelection(){
+
+    const [message, setMessage] = useState('');
+
+    useEffect(() => {
+        const fetchMessage = async () => {
+            const response = await axios.get('http://localhost:8000/');
+            setMessage(response.data.messages);
+        };
+        fetchMessage();
+    }, []);
+
+    console.log (message);
     return(<div>
 
         <div class ="left-part">
         <div class="nav-bar">
                 <div class ="header-navbar">
                     <div class ="sp">
-                        
+
                     </div>
                     <span class="title-header-navbar">
-                        username
+                        {message}
                     </span>
                     <span class="logo-header-navbar">
 
