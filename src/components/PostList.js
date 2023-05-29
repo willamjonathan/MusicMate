@@ -219,36 +219,50 @@ function PostList() {
   );
 
   return (
-    <div>
-      <input
-        type="text"
-        placeholder="Search tweets by search term"
-        value={searchTerm}
-        onChange={handleSearch}
-      />
+    <div className="waduh">
+        <input
+            className="bar"
+            type="text"
+            placeholder="Search tweets by search term"
+            value={searchTerm}
+            onChange={handleSearch}
+            style={{ paddingTop: '15px'}}
+        />
+
+      <div class ="underline">
+        </div>
       {filteredTweets.map((tweet) => (
         <div key={uuidv4()}>
-          <h1 class ="username" onClick={() => handleUsernameClick(tweet.username)}>{tweet.username}</h1>
+          <h1 className="username" onClick={() => handleUsernameClick(tweet.username)}>
+            {tweet.username}
+          </h1>
           <h2>{tweet.search_term}</h2>
           {tweet.tweets.map((t) => (
             <p key={uuidv4()}>{t.text}</p>
           ))}
-          <h3>{tweet.love}</h3>
-          {/* <h3>{tweet.music}</h3> */}
           <h2>{tweet.musicName}</h2>
           <MusicPlayer musicUrl={`http://localhost:8000/music/${tweet.music}`} />
-          <button onClick={() => (tweet.isLiked ? handleDislikeClick(tweet.post_id) : handleLikeClick(tweet.post_id))}>
+          <div className="love-container">
+            <h3>{tweet.love}</h3>
+            <span className="love-symbol">❤️</span>
+          </div>
+          <button
+            onClick={() =>
+              tweet.isLiked ? handleDislikeClick(tweet.post_id) : handleLikeClick(tweet.post_id)
+            }
+          >
             {tweet.isLiked ? "Dislike" : "Like"}
           </button>
-          
           <CommentList postId={tweet.post_id} />
           <CommentForm postId={tweet.post_id} />
- 
+          <div class ="underline">
         </div>
-                
+        </div>
       ))}
     </div>
   );
+  
+  
 }
 
 function setCookie(key, value) {
