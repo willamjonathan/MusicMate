@@ -169,15 +169,16 @@ function PostList() {
     const visibleComments = showAll ? comments : comments.slice(0, 3);
   
     return (
-      <div>
-        {visibleComments.map((comment) => (
+      // <div className ="comment-on-timeline">
+        <div className ="comment-on-timeline">
+        <div class="comments-styling">{visibleComments.map((comment) => (
           <p key={comment}>{comment}</p>
-        ))}
+        ))}</div>
         {comments.length > 3 && !showAll && (
-          <button className = "timeline-btn"onClick={handleClick} >Show all comments</button>
+          <button className = "timeline-btn sa-comment-btn"onClick={handleClick} >Show all comments</button>
         )}
         {showAll && (
-          <button className = "timeline-btn" onClick={handleClick}>Hide comments</button>
+          <button className = "timeline-btn sa-comment-btn" onClick={handleClick}>Hide comments</button>
         )}
       </div>
     );
@@ -204,11 +205,15 @@ function PostList() {
   
     return (
       <form onSubmit={handleCommentSubmit}>
-        <label>
-          Comment:
-          <input className ="Timeline-input"type="text" value={commentInput} onChange={handleCommentInputChange} />
-        </label>
-        <button type="submit" className = "timeline-btn">Add Comment</button>
+        <div class ="comment-container">
+        {/* <label> */}
+          
+          <div class="comment-text">
+          Comment:</div>
+          <input placeholder="Comment" className ="comment-input"type="text" value={commentInput} onChange={handleCommentInputChange} />
+        
+        <button type="submit" className = "timeline-btn comment-btn">Add Comment</button></div>
+        {/* </label> */}
       </form>
     );
   }
@@ -234,20 +239,23 @@ function PostList() {
         <div key={uuidv4()}>
           <div className ="username-timeline" onClick={() => handleUsernameClick(tweet.username)}>
           {/* <h1 className="username" onClick={() => handleUsernameClick(tweet.username)}> */}
-            {tweet.username}
+            <div class="twt-username">{tweet.username}</div>
           {/* </h1> */}
           </div>
-          <div class ="title-timeline">{tweet.search_term}
+          <div class ="title-timeline-container">
+          <div class ="title-timeline">{tweet.search_term}</div>
           {tweet.tweets.map((t) => (
-            <p key={uuidv4()}>{t.text}</p>
-          ))}</div>
-          <h2>{tweet.musicName}</h2>
-          <MusicPlayer musicUrl={`http://localhost:8000/music/${tweet.music}`} />
+           <div class ="text-timeline"> <p key={uuidv4()}>{t.text}</p></div>
+          ))}
+          {tweet.musicName}
+
+
+          <MusicPlayer musicUrl={`http://localhost:8000/music/${tweet.music}`} /></div>
           <div className="love-container">
-            <h3>{tweet.love}</h3>
+            <span>{tweet.love}</span>
             <span className="love-symbol">❤️</span>
           </div>
-          <button
+          <button className="like-btn"
             onClick={() =>
               tweet.isLiked ? handleDislikeClick(tweet.post_id) : handleLikeClick(tweet.post_id)
             }
