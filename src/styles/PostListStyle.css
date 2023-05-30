@@ -1,21 +1,16 @@
-/* Style for the search bar */
-input[type="text"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
 /* Style for the tweets container */
 .waduh {
+  margin: 2%;
   background-color: #f2f2f2;
-  padding-left: 20px;
+  position: relative;
   border-radius: 4px;
-  margin-bottom: 5px;
   font-style: bold;
+  width: 90%;
+}
+.underline-timeline {
+  width: 100%;
+  background-color: black;
+  height: 3px;
 }
 
 /* Style for the tweet search term */
@@ -45,7 +40,7 @@ h3 {
 }
 
 /* Style for the like/dislike button */
-button {
+.timeline-btn {
   background-color: #4caf50;
   border: none;
   color: white;
@@ -60,7 +55,7 @@ button {
   transition: background-color 0.3s;
 }
 
-button:hover {
+.timeline-btn:hover {
   background-color: #45a049;
 }
 
@@ -71,13 +66,20 @@ form {
 
 /* Style for the comment input field */
 .Timeline-input {
-  width: 100%;
+  position: relative;
+  left: 5%;
+  width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
+}
+
+.text-timeline {
+  font-weight: 600;
+  font-size: 1.5vw;
 }
 
 /* Style for the add comment button */
@@ -166,5 +168,5 @@ form {
 }
 
 .bar {
-  padding-top: 522px;
+  margin: 2%;
 }

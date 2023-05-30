@@ -174,10 +174,10 @@ function PostList() {
           <p key={comment}>{comment}</p>
         ))}
         {comments.length > 3 && !showAll && (
-          <button onClick={handleClick} >Show all comments</button>
+          <button className = "timeline-btn"onClick={handleClick} >Show all comments</button>
         )}
         {showAll && (
-          <button onClick={handleClick}>Hide comments</button>
+          <button className = "timeline-btn" onClick={handleClick}>Hide comments</button>
         )}
       </div>
     );
@@ -208,7 +208,7 @@ function PostList() {
           Comment:
           <input className ="Timeline-input"type="text" value={commentInput} onChange={handleCommentInputChange} />
         </label>
-        <button type="submit" class ="btn-a">Add Comment</button>
+        <button type="submit" className = "timeline-btn">Add Comment</button>
       </form>
     );
   }
@@ -228,8 +228,7 @@ function PostList() {
             onChange={handleSearch}
             style={{ paddingTop: '15px'}}
         />
-
-      <div class ="underline">
+      <div class ="underline-timeline">
         </div>
       {filteredTweets.map((tweet) => (
         <div key={uuidv4()}>
@@ -255,7 +254,7 @@ function PostList() {
           </button>
           <CommentList postId={tweet.post_id} />
           <CommentForm postId={tweet.post_id} />
-          <div class ="underline">
+          <div class ="underline-timeline">
         </div>
         </div>
       ))}

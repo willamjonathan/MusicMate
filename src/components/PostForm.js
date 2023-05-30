@@ -112,18 +112,18 @@ function PostForm() {
 
       <form onSubmit={handleSubmit} encType="multipart/form-data">
         <label>
-          Title:
-          <input type="text" name="searchTerm" value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} />
+          <div class="text-timeline">Title</div>
+          <input className = "Timeline-input" type="text" name="searchTerm" placeholder='Title' value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} />
         </label>
         <label>
-          Tweet:
-          <input type="text" name="tweet" value={tweet} onChange={(event) => setTweet(event.target.value)} />
+        <div class="text-timeline">Tweet</div>
+          <input className = "Timeline-input" type="text" name="tweet"  placeholder='Tweet' value={tweet} onChange={(event) => setTweet(event.target.value)} />
         </label>
         <label>
-          File:
+        <div class="text-timeline">File</div>
           <input type="file" name="file" onChange={handleFileChange} />
         </label>
-        <button type="submit">Submit</button>
+        <button type="submit" className = "timeline-btn">Submit</button>
       </form>
 
     </div>
