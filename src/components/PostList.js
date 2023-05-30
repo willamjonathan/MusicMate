@@ -232,13 +232,15 @@ function PostList() {
         </div>
       {filteredTweets.map((tweet) => (
         <div key={uuidv4()}>
-          <h1 className="username" onClick={() => handleUsernameClick(tweet.username)}>
+          <div className ="username-timeline" onClick={() => handleUsernameClick(tweet.username)}>
+          {/* <h1 className="username" onClick={() => handleUsernameClick(tweet.username)}> */}
             {tweet.username}
-          </h1>
-          <h2>{tweet.search_term}</h2>
+          {/* </h1> */}
+          </div>
+          <div class ="title-timeline">{tweet.search_term}
           {tweet.tweets.map((t) => (
             <p key={uuidv4()}>{t.text}</p>
-          ))}
+          ))}</div>
           <h2>{tweet.musicName}</h2>
           <MusicPlayer musicUrl={`http://localhost:8000/music/${tweet.music}`} />
           <div className="love-container">

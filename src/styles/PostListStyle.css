@@ -141,16 +141,30 @@ form {
 .comment-container button:hover {
   background-color: #45a049;
 }
-
-.username {
-  transition: opacity 0.3s;
+.username-timeline {
+  position: relative;
+  left: 5%;
+  margin-top: 2%;
+  color: black;
+  font-weight: 500;
+  font-size: 1.3vw;
+  margin-bottom: 2%;
 }
+/* .username {
+  transition: opacity 0.3s;
+} */
 
-.username:hover {
+.username-timeline:hover {
   opacity: 0.4;
   color: royalblue;
 }
-
+.title-timeline {
+  font-size: 2.5vw;
+  font-weight: bold;
+  /* text-align:center; */
+  position: relative;
+  left: 10%;
+}
 .love-container {
   display: flex;
   align-items: center;

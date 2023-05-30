@@ -158,7 +158,7 @@ const secondSoundsGroup = [
     }, [sounds, play]);
   
     return (
-      <div className="keyboard">
+      <div className="keyboard-full">
         {sounds.map((sound) => (
           <KeyboardKey
             key={sound.id}
@@ -280,7 +280,7 @@ const secondSoundsGroup = [
         </div>
         <h1>Music Maker Pro</h1>
         <div className="wrapper">
-          <div className="keyboard">
+          <div className="keyboard-full">
             <Keyboard
               sounds={sounds}
               play={play}

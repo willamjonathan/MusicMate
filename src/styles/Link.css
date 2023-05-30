@@ -1,11 +1,10 @@
 .link {
-  /* color: black; default link color */
-  text-decoration: none; /* remove underline */
+  text-decoration: none;
 }
 
 .link:hover {
-  color: gray; /* link color when hovered over */
-  text-decoration: none; /* add underline when hovered over */
+  color: gray;
+  text-decoration: none;
 }
 .link-bh {
   color: black;

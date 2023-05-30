@@ -40,13 +40,13 @@ h2 {
   background-image: linear-gradient(-225deg, #e84545 35%, #394ae1 100%);
 }
 
-.keyboard {
+.keyboard-full {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.keyboard .drum-pad {
+.keyboard-full .drum-pad {
   width: 80px;
   height: 80px;
   outline: none;
@@ -167,15 +167,17 @@ h2 {
 }
 
 .link-produce {
-  color: gray;
-  background-color: white;
+  color: white;
+  background-color: #ff7b00;
   width: 10vh;
   font-size: 1.3vw;
   padding: 10px;
   border-radius: 10px;
   pointer: cursor;
+  font-weight: bold;
 }
 
 .link-produce:hover {
   opacity: 75%;
+  color: white;
 }
