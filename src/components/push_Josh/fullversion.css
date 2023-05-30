@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)) ,url("../img/musicroom.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+}
+
+#drum-machine {
+  margin: 15px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  padding: 10px;
+  grid-gap: 15px;
+  margin-top: 40px;
+  border-radius: 15px;
+  grid-template-columns: 1fr;
+  background-image: linear-gradient(-225deg, #e84545 35%, #394ae1 100%);
+}
+
+.keyboard {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.keyboard .drum-pad {
+  width: 80px;
+  height: 80px;
+  outline: none;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out,;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 680px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.controle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.controle > button,
+.controle > input,
+.controle > h2 {
+  margin-bottom: 10px;
+}
+
+.controle button {
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: #ff7b00;
+  font-family: "Roboto", sans-serif;
+}
+
+.keyboard .drum-pad:active,
+.controle button:active {
+  transform: scale(0.95); /* Apply a scaling effect when the button is pressed */
+  transition: transform 0.2s ease-in-out;
+}
+
+.change-sounds-group-button:active {
+  background-color: #ff5b00; /* Apply a different background color when the button is pressed */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+.active-button {
+  background-color: #ff5b00;
+  /* Apply a different background color when the button is active/pressed */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.save-music-script-button {
+  /* Additional styles for the save music script button */
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: #ff7b00;
+  font-family: "Roboto", sans-serif;
+}
+
+.save-music-script-button:active {
+  background-color: #ff5b00;
+  /* Apply a different background color when the button is pressed */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.toggle-recording-button {
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: #ff7b00;
+  font-family: "Roboto", sans-serif;
+}
+
+.toggle-recording-button:active {
+  background-color: #ff5b00;
+  /* Apply a different background color when the button is pressed */
+  transition: background-color 0.2s ease-in-out;
+}
