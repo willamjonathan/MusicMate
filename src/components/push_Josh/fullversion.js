@@ -196,7 +196,7 @@ const secondSoundsGroup = [
     </div>
   );
   
-  const App = () => {
+  const Appfull = () => {
     const [power, setPower] = useState(true);
     const [volume, setVolume] = useState(1);
     const [soundName, setSoundName] = useState("");
@@ -272,7 +272,10 @@ const secondSoundsGroup = [
     };
   
     return (
-      <div id="drum-machine">
+      <div className = "memek" id="drum-machine">
+        <div className="back-button">
+          back
+        </div>
         <h1>Music Maker Pro</h1>
         <div className="wrapper">
           <div className="keyboard">
@@ -306,5 +309,5 @@ const secondSoundsGroup = [
     
   };
   
-  export default App;
+  export default Appfull;
   

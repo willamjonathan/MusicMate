@@ -94,7 +94,7 @@ const DrumControl = ({ togglePower, power, name }) => (
   </div>
 );
 
-const App = () => {
+const Applite = () => {
   const [power, setPower] = useState(true);
   const [soundName, setSoundName] = useState("");
   const [soundType] = useState("trapKit");
@@ -130,7 +130,7 @@ const App = () => {
   };
 
   return (
-    <div id="drum-machine">
+    <div className = "drum-machines" id="drum-machine">
       <div className="wrapper">
         <Keyboard sounds={sounds} play={play} power={power} deactivateAudio={deactivateAudio} />
         <DrumControl togglePower={togglePower} power={power} name={soundName || soundsName[soundType]} />
@@ -139,4 +139,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Applite;

@@ -11,6 +11,8 @@ import LeftSelection from './components/Leftsection';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Produce from './components/Produce ';
 import UserPostPage from './components/UserPostPage';
+import Appfull from './components/push_Josh/fullversion';
+import Applite from './components/push_Josh/drumLite';
 
 // import Fix from './components/Fix';
 
@@ -28,7 +30,8 @@ function App() {
           <Route exact path="/premium" element={<Premium/>} />
           <Route exact path="/posted" element={<Posted/>} />
           <Route exact path ="/produce" element = {<Produce/>}/>
-          <Route exact path ="/user-post-page" element = {<UserPostPage/>}/>
+          <Route exact path ="/music-lite" element = {<Applite/>}/>
+          <Route exact path ="/music-premium" element = {<Appfull/>}/>
         </Routes>
       </Router>
       {/* <Produce></Produce> */}
