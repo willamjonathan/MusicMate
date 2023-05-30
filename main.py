@@ -139,11 +139,17 @@ async def get_music(filename: str):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    
+
+from datetime import datetime
+
+today = datetime.today()
+formatted_date = today.strftime("%d/%m/%Y")
+
 @app.post("/tweets")
 async def add_tweets(request: Request, data: dict = Body(...)):
     global musicname
     global realmusicname
+    global formatted_date
     try:
         search_term = data["search_term"]
         tweet = data["tweets"][0]["text"]
@@ -165,10 +171,11 @@ async def add_tweets(request: Request, data: dict = Body(...)):
             "post_id": post_id,
             "username": email,
             "music": musicname,
-            "musicName": realmusicname
+            "musicName": realmusicname,
+            "date": formatted_date
         })
 
-        realmusicname = ""
+        # realmusicname = ""
         return {"message": f"Tweets for {search_term} added successfully with ID {doc_id}"}
     except Exception as e:
         return {"error": str(e)}
@@ -306,6 +313,7 @@ async def signup(user: User):
 async def givePost():
     global musicname
     global emails
+    global realmusicname
     try:
         print(emails)
         doc_ref = db.collection("users").document(emails)
@@ -317,15 +325,18 @@ async def givePost():
         print(musicname)
         if doc is None:
             # If the document doesn't exist, create a new one with the new post
-            doc_ref.set({"email": emails, "post": [musicname]})
+            doc_ref.set({"email": emails, "post": [musicname] ,"music" : [realmusicname]})
         else:
             # If the document exists, append the new post to the existing list of posts
             posts = doc.get("post", [])
+            posted = doc.get("music", [])
             print(posts)
             posts.append(musicname)
+            posted.append(realmusicname)
             print(posts)
             # Update the document with the updated list of posts
             doc_ref.update({"post": posts})
+            doc_ref.update({"music": posted})
             musicname = ""
             realmusicname = ""
         return {"Posted a post for user": emails}
@@ -426,32 +437,15 @@ async def UserNow(email: str):
 
         # Retrieve the list of posts for the chosen user
         posts = doc.get("post", [])
-        print(posts)
+        # print(posts)
+
+        print("test")
+        posted = doc.get("music", [])
+        print("test")
+        print(posted)
         
-        return{"songs": posts}
+        return{"songs": posts, "posted":posted}
 
-    except Exception as e:
-        print("kok error")
-        return {"error": str(e)}
-
-@app.post("/ChooseNow")
-async def UserNow(email: str):
-    global ChoosedUser
-    ChoosedUser = email
-
-    try:
-        # Retrieve the user document from Firestore
-        doc_ref = db.collection("users").document(ChoosedUser)
-        doc = doc_ref.get().to_dict()
-
-        if doc is None:
-            return {"error": "User not found"}
-
-        # Retrieve the list of posts for the chosen user
-        posts = doc.get("post", [])
-        print(posts)
-        
-        return{"songs": posts}
 
     except Exception as e:
         print("kok error")
@@ -473,7 +467,8 @@ async def UserNow():
         posts = doc.get("post", [])
         print(posts)
         
-        return{"songs": posts}
+        posted = doc.get("music", [])
+        return{"songs": posts, "posted":posted}
 
     except Exception as e:
         print("kok error")
