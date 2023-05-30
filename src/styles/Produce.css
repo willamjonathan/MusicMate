@@ -26,7 +26,7 @@
   margin-left: 5%;
   width: 90%;
   /* background-color: red; */
-  height: 5%;
+  height: auto;
   display: flex;
   text-align: center;
   color: #2b2e4a;
@@ -38,11 +38,13 @@
   border: 2px solid #2b2e4a;
 }
 .lite-produce {
+  padding: 20px;
   width: 42.5%;
   background-color: white;
   border-radius: 50px;
 }
 .premium-produce {
+  padding: 20px;
   width: 42.5%;
   margin-left: 5%;
   /* background-color: ; */
@@ -54,4 +56,23 @@
   opacity: 75%;
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.produce-container {
+  widht: 100%;
+  height: 100%;
+  position: relative;
+  top: 5%;
+  left: 20%;
+  /* margin-left: 25%; */
+  /* margin-right: 25%; */
+}
+.produce-pict {
+  background-image: url("../img/produce/produce-home.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.produce-bg {
+  width: 50%;
+  height: 50%;
 }

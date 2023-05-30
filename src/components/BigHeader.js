@@ -21,7 +21,7 @@ function BigHeader(){
                             className="search-bar"
                             value={search}
                             onChange={(e) => setSearch(e.target.value)}
-                            placeholder="   Search"
+                            placeholder="Search"
                             
                             />
                         <div class="search-btn-bigheader">   

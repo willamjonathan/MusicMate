@@ -26,6 +26,11 @@ function Produce(){
                 <span class ="premium-produce" onClick={() => premium()}> PREMIUM </span>
 
             </div>
+            <div class ="produce-container">
+            <div class ="produce-pict produce-bg">
+                
+            </div>
+            </div>
         </div>
     
     </>)
