@@ -29,6 +29,7 @@ function UserPostPage() {
     };
     fetchSongs();
   }, []);
+  console.log(songs)
 
   // Fetch and display user's posts using the username
 
@@ -40,7 +41,12 @@ function UserPostPage() {
 
       <h1>User Songs</h1>
     {songs.map((song, index) => (
+      
       <MusicPlayer key={index} musicUrl={`http://localhost:8000/music/${song}`} />
+      // <React.Fragment key={index}>
+      //     <MusicPlayer musicUrl={`http://localhost:8000/music/${song.hashedName}`} />
+      //     <p>{song.realName}</p>
+      // </React.Fragment>
     ))}
     </div>
 
