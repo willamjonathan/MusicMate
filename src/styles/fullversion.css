@@ -2,11 +2,11 @@
   margin: 0;
 }
 
-.memek {
+.drumm {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./img/musicroom.jpeg");
+    url("../img/produce/musicroom.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -156,6 +156,26 @@ h2 {
 }
 
 .back-button {
-  font-size: 3vw;
-  color: white;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  /* border: 2px solid black; */
+  /* width: 5%; */
+  text-align: center;
+  /* height: 4%; */
+  padding: 20px;
+}
+
+.link-produce {
+  color: gray;
+  background-color: white;
+  width: 10vh;
+  font-size: 1.3vw;
+  padding: 10px;
+  border-radius: 10px;
+  pointer: cursor;
+}
+
+.link-produce:hover {
+  opacity: 75%;
 }

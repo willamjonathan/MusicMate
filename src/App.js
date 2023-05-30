@@ -11,8 +11,8 @@ import LeftSelection from './components/Leftsection';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Produce from './components/Produce ';
 import UserPostPage from './components/UserPostPage';
-import Appfull from './components/push_Josh/fullversion';
-import Applite from './components/push_Josh/drumLite';
+import Appfull from './components/fullversion';
+import Applite from './components/drumLite';
 
 // import Fix from './components/Fix';
 

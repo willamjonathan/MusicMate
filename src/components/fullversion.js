@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "./fullversion.css";
+import "../styles/fullversion.css";
 import axios from "axios";
+import { Link, useNavigate } from "react-router-dom";
+
 const firstSoundsGroup = [
     {
       keyCode: 81,
@@ -272,9 +274,9 @@ const secondSoundsGroup = [
     };
   
     return (
-      <div className = "memek" id="drum-machine">
+      <div className = "drumm" id="drum-machine">
         <div className="back-button">
-          back
+          <Link to ="/produce" className="link link-produce">back</Link>
         </div>
         <h1>Music Maker Pro</h1>
         <div className="wrapper">

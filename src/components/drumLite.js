@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "./drumLite.css";
+import "../styles/drumLite.css";
+import "../styles/fullversion.css"
+import { Link, useNavigate } from "react-router-dom";
+
 
 const firstSoundsGroup = [
   {
@@ -131,6 +134,9 @@ const Applite = () => {
 
   return (
     <div className = "drum-machines" id="drum-machine">
+      <div className="back-button">
+          <Link to ="/produce" className="link link-produce">back</Link>
+        </div>
       <div className="wrapper">
         <Keyboard sounds={sounds} play={play} power={power} deactivateAudio={deactivateAudio} />
         <DrumControl togglePower={togglePower} power={power} name={soundName || soundsName[soundType]} />

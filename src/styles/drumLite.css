@@ -6,7 +6,8 @@
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./img/padpic.jpg");
+    url("../img/produce/padpic.jpg");
+
   background-size: cover;
   background-repeat: no-repeat;
 }
