@@ -30,6 +30,7 @@ function App() {
           <Route exact path="/premium" element={<Premium/>} />
           <Route exact path="/posted" element={<Posted/>} />
           <Route exact path ="/produce" element = {<Produce/>}/>
+          <Route exact path ="/user-post-page" element = {<UserPostPage/>}/>
           <Route exact path ="/music-lite" element = {<Applite/>}/>
           <Route exact path ="/music-premium" element = {<Appfull/>}/>
         </Routes>
@@ -43,6 +44,7 @@ function App() {
     // <Fix></Fix>
     // <Profile></Profile>
     // <Premium></Premium>
+    //tests
   );
 }
 
