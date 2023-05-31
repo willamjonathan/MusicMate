@@ -17,19 +17,21 @@ function UserPostPage() {
   }, []);
 
   const [songs, setSongs] = useState([]);
+  const [posted, setPosted] = useState([]);
 
   useEffect(() => {
     const fetchSongs = async () => {
       try {
         const response = await axios.post("http://localhost:8000/TakeNow");
         setSongs(response.data.songs);
+        setPosted(response.data.posted);
       } catch (error) {
         console.error(error);
       }
     };
     fetchSongs();
   }, []);
-  console.log(songs)
+  // console.log(songs)
 
   // Fetch and display user's posts using the username
 
@@ -40,9 +42,9 @@ function UserPostPage() {
       {/* Display user's posts */}
 
       <h1>User Songs</h1>
-    {songs.map((song, index) => (
-      
-      <MusicPlayer key={index} musicUrl={`http://localhost:8000/music/${song}`} />
+    {songs.map((song,index) => (
+
+      <MusicPlayer key={index} musicUrl={`http://localhost:8000/music/${song}`} musicName={posted[index]} />
       // <React.Fragment key={index}>
       //     <MusicPlayer musicUrl={`http://localhost:8000/music/${song.hashedName}`} />
       //     <p>{song.realName}</p>
