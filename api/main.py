@@ -35,10 +35,22 @@ from firebase_admin import exceptions
 #AMBIL MUSIC GENG
 from fastapi.responses import StreamingResponse
 
+
 session = Session()
 
 
 app = FastAPI(docs_url="/docs", redoc_url="/redoc")
+
+import logging
+
+# Set up the logging configuration
+logging.basicConfig(level=logging.DEBUG)  # Configure the logging level as per your requirement
+
+@app.get("/testbro")
+async def root():
+    logging.debug("Inside the root endpoint")  # Add logging statements to track the flow of execution
+    return {"messages": "waduh"}
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -65,10 +77,6 @@ emails = "aku@gmail.com"
 @app.get("/")
 async def root():
     return {"messages": emails}
-
-@app.get("/testbro")
-async def root():
-    return {"messages": "waduh"}
 
 musicname = "SAYANG.mp3"
 realmusicname = "Ngencok.mp3"
