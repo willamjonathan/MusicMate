@@ -190,7 +190,7 @@ form {
   position: relative;
   left: 10%;
   cursor: pointer;
-  background-color: white;
+  /* background-color: #9b1c31; */
   border: 1px solid black;
   border-radius: 5px;
 
@@ -199,7 +199,7 @@ form {
 }
 .like-btn:hover {
   opacity: 75%;
-  background-color: gray;
+  background-color: #9999;
   color: white;
 }
 
@@ -211,6 +211,7 @@ form {
 
 .love-symbol {
   font-size: 1.2vw; /* Adjust the font size as desired */
+  color: #9b1c31;
 }
 
 .bar {
@@ -245,7 +246,24 @@ form {
   left: 10%;
 }
 .comments-styling {
+  font-size: 1vw;
 }
 .sa-comment-btn {
   border-radius: 20px;
+}
+.music-title {
+  font-size: 1vw;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+.music-file-timeline {
+  background-color: #9999;
+  padding: 20px;
+  border-radius: 30px;
+}
+.music-date {
+  /* position: relative; */
+  /* left: 70%; */
+  margin-left: 2%;
+  font-size: 0.8vw;
 }

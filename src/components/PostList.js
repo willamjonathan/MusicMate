@@ -247,13 +247,15 @@ function PostList() {
           {tweet.tweets.map((t) => (
            <div class ="text-timeline"> <p key={uuidv4()}>{t.text}</p></div>
           ))}
-          {tweet.musicName}
+          <div class = "music-file-timeline">
+          <div class ="music-title">{tweet.musicName}</div>
 
 
-          <MusicPlayer musicUrl={`http://localhost:8000/music/${tweet.music}`} /></div>
+          <MusicPlayer musicUrl={`http://localhost:8000/music/${tweet.music}`} /></div></div>
           <div className="love-container">
             <span>{tweet.love}</span>
             <span className="love-symbol">❤️</span>
+            <span className ="music-date">{tweet.date}</span>
           </div>
           <button className="like-btn"
             onClick={() =>
@@ -263,7 +265,7 @@ function PostList() {
             
             {tweet.isLiked ? "Dislike" : "Like"}
           </button>
-          {tweet.date}
+          
           <CommentList postId={tweet.post_id} />
           <CommentForm postId={tweet.post_id} />
           <div class ="underline-timeline">
