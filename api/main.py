@@ -52,6 +52,7 @@ app.add_middleware(
 cred = credentials.Certificate("Service.json")
 firebase_admin.initialize_app(cred)
 
+print(cred)
 # Get a Firestore client
 db = firestore.client()
 
