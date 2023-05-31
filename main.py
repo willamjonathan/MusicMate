@@ -494,6 +494,7 @@ async def UserNow():
         print(posts)
         
         posted = doc.get("music", [])
+        
         return{"songs": posts, "posted":posted}
 
     except Exception as e:
