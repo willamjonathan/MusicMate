@@ -81,6 +81,11 @@ function Login() {
           // Example: Display success message
           // setSuccessMessage(data.message);
         } else {
+          console.log("Response status:", response.status);
+          console.log("Response status text:", response.statusText);
+      
+          const errorBody = await response.json();
+          console.log("Response body:", errorBody);
           throw new Error("User already exist");
         }
       } catch (error) {
