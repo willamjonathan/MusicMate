@@ -114,7 +114,7 @@ const secondSoundsGroup = [
       url: 'https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3'
     }
   ];
-
+  
   const soundsName = {
     trapKit: "Trap Kit",
     smoothPianoKit: "Smooth Piano Kit",
@@ -245,12 +245,16 @@ const secondSoundsGroup = [
     };
   
     const changeSoundGroup = () => {
+      console.log("a")
       const newSoundType = soundType === "trapKit" ? "smoothPianoKit" : "trapKit";
       setSoundType(newSoundType);
       setSounds(soundsGroup[newSoundType]);
+
+      console.log("a")
     };
   
     const saveMusicScript = () => {
+      console.log("a")
       const musicScript = recordedKeys.join(""); // Convert recordedKeys to a string
       const musicName = "Your Music Name"; // Set the desired music name
       
@@ -260,6 +264,7 @@ const secondSoundsGroup = [
         .post("http://localhost:8000/save_music", { MusicScript: musicScript, MusicName: musicName })
         .then((response) => {
           console.log(response.data);
+          console.log("a")
           // Handle success or display a message to the user
         })
         .catch((error) => {

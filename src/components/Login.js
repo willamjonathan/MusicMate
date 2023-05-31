@@ -44,6 +44,8 @@ function Login() {
           // TODO: Handle login success (e.g., redirect, store access token)
           // Example: Redirect to dashboard page
           // history.push("/dashboard");
+          setEmail("");
+          setPassword("");
           navigate(`/home`);
         } else {
           throw new Error("Incorrect email or password");
@@ -69,7 +71,9 @@ function Login() {
           console.log(data.message);
           setErrorMessage("");
           setSuccessMessage("User signup successful");
-
+          
+          setEmail("");
+          setPassword("");
           // TODO: Handle signup success (e.g., display success message, redirect)
           // Example: Display success message
           // setSuccessMessage(data.message);

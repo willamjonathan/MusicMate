@@ -251,8 +251,9 @@ const secondSoundsGroup = [
       setSoundType(newSoundType);
       setSounds(soundsGroup[newSoundType]);
     };
-  
+    
     const saveMusicScript = () => {
+      console.log("A");
       const musicScript = recordedKeys.join(""); // Convert recordedKeys to a string
       const musicName = "Your Music Name"; // Set the desired music name
     
@@ -272,9 +273,12 @@ const secondSoundsGroup = [
       setRecording((prevRecording) => !prevRecording);
       setRecordedKeys([]);
     };
-  
+
     return (
       <div className = "drumm" id="drum-machine">
+        {/* <button id="convertButton" onClick={handleConvertClick}>
+        Convert to MP3
+      </button> */}
         <div className="back-button">
           <Link to ="/produce" className="link link-produce">back</Link>
         </div>
