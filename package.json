@@ -22,6 +22,7 @@
     "react-firebase-hooks": "^5.1.1",
     "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
+    "vercel": "^30.0.0",
     "web-audio-recorder-js": "^0.0.2",
     "web-vitals": "^2.1.4"
   },

@@ -276,9 +276,6 @@ const secondSoundsGroup = [
 
     return (
       <div className = "drumm" id="drum-machine">
-        {/* <button id="convertButton" onClick={handleConvertClick}>
-        Convert to MP3
-      </button> */}
         <div className="back-button">
           <Link to ="/produce" className="link link-produce">back</Link>
         </div>
