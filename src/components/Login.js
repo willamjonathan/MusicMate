@@ -163,7 +163,7 @@ function Login() {
                 
             </div> */}
                 <div class ="user-info">
-                <h2>{isLoginMode ? "LOGIN" : "SIGN UP"}</h2>
+                <div class="login-title">{isLoginMode ? "LOGIN" : "SIGN UP"}</div>
                 
                 <form onSubmit={handleFormSubmit}>
                     <div>

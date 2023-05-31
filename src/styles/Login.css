@@ -73,6 +73,10 @@
   color: #fff;
   font-size: 3vw;
 }
+.login-title {
+  color: white;
+  font-weight: 700;
+}
 .user-info .username {
   margin-top: 10%;
   font-family: "Open Sans", sans-serif;
