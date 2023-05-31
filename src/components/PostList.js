@@ -5,6 +5,10 @@ import "../styles/PostListStyle.css"
 import MusicPlayer from "./MusicPlayer";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+    faUserCircle
+} from '@fortawesome/free-solid-svg-icons'
 
 function PostList() {
   const [tweets, setTweets] = useState([]);
@@ -239,7 +243,8 @@ function PostList() {
         <div key={uuidv4()}>
           <div className ="username-timeline" onClick={() => handleUsernameClick(tweet.username)}>
           {/* <h1 className="username" onClick={() => handleUsernameClick(tweet.username)}> */}
-            <div class="twt-username">{tweet.username}</div>
+          <div class ="twt-username">
+          <span class="icon-username"><FontAwesomeIcon icon={faUserCircle} /></span><span>{tweet.username}</span></div>
           {/* </h1> */}
           </div>
           <div class ="title-timeline-container">
@@ -247,13 +252,15 @@ function PostList() {
           {tweet.tweets.map((t) => (
            <div class ="text-timeline"> <p key={uuidv4()}>{t.text}</p></div>
           ))}
-          {tweet.musicName}
+          <div class = "music-file-timeline">
+          <div class ="music-title">{tweet.musicName}</div>
 
 
-          <MusicPlayer musicUrl={`http://localhost:8000/music/${tweet.music}`} /></div>
+          <MusicPlayer musicUrl={`http://localhost:8000/music/${tweet.music}`} /></div></div>
           <div className="love-container">
             <span>{tweet.love}</span>
             <span className="love-symbol">❤️</span>
+            <span className ="music-date">{tweet.date}</span>
           </div>
           <button className="like-btn"
             onClick={() =>
@@ -263,7 +270,7 @@ function PostList() {
             
             {tweet.isLiked ? "Dislike" : "Like"}
           </button>
-          {tweet.date}
+          
           <CommentList postId={tweet.post_id} />
           <CommentForm postId={tweet.post_id} />
           <div class ="underline-timeline">
