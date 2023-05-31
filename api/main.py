@@ -38,7 +38,7 @@ from fastapi.responses import StreamingResponse
 session = Session()
 
 
-app = FastAPI()
+app = FastAPI(docs_url="/docs", redoc_url="/redoc")
 
 app.add_middleware(
     CORSMiddleware,
