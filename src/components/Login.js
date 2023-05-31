@@ -67,6 +67,7 @@ function Login() {
           body: JSON.stringify(signupData),
         });
 
+        console.log("FAK");
         if (response.ok) {
           const data = await response.json();
           console.log(data.message);
