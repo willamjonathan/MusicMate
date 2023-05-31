@@ -142,6 +142,8 @@ form {
   background-color: #45a049;
 }
 .username-timeline {
+  /* background-color: gray;
+  width: auto; */
   position: relative;
   left: 5%;
   margin-top: 2%;
@@ -153,34 +155,97 @@ form {
 /* .username {
   transition: opacity 0.3s;
 } */
-
+.twt-username {
+  background-color: #9999;
+  padding: 4px;
+  width: 30%;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .username-timeline:hover {
   opacity: 0.4;
   color: royalblue;
 }
-.title-timeline {
+.title-timeline-container {
   font-size: 2.5vw;
   font-weight: bold;
   /* text-align:center; */
   position: relative;
   left: 10%;
+  width: 80%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
 }
 .love-container {
   display: flex;
   align-items: center;
-  size: 5px;
+  font-size: 1vw;
+  position: relative;
+  left: 10%;
 }
 
-.love-container h3,
-.love-container .love-symbol {
+.like-btn {
+  position: relative;
+  left: 10%;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  background-color: white;
+  /* background-color:  */
+}
+.like-btn:hover {
+  opacity: 75%;
+  background-color: gray;
+  color: white;
+}
+
+/* .love-container h3, */
+/* .love-container .love-symbol {
   display: inline;
   margin-right: 5px;
-}
+} */
 
 .love-symbol {
-  font-size: 25px; /* Adjust the font size as desired */
+  font-size: 1.2vw; /* Adjust the font size as desired */
 }
 
 .bar {
   margin: 2%;
+}
+.comment-container {
+  position: relative;
+  left: 5%;
+  margin-bottom: 2%;
+}
+.comment-text {
+  font-size: 1.8vw;
+  font-weight: 500;
+  /* margit-bottom: 2px; */
+}
+.comment-input {
+  margin-top: 2%;
+  width: 70%;
+  padding: 15px;
+  font-size: 1.5vw;
+  border: 2px;
+  border-radius: 20px;
+}
+.comment-btn {
+  /* padding: 15px; */
+  width: 15%;
+  font-size: 1.8vw;
+  margin-left: 4%;
+}
+.comment-on-timeline {
+  position: relative;
+  left: 10%;
+}
+.comments-styling {
+}
+.sa-comment-btn {
+  border-radius: 20px;
 }

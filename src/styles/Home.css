@@ -121,6 +121,7 @@
   height: 80%;
   padding: 30px;
   border-bottom: 5px solid black;
+  padding-bottom: 5%;
   /* overflow-x: scroll;
   overflow-y: hidden; */
 
@@ -146,7 +147,7 @@
 .right2-home {
   position: absolute;
   left: 30%;
-  top: 95%;
+  top: 100%;
   width: 80%;
   height: 600px;
 }
