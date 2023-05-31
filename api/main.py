@@ -65,6 +65,10 @@ emails = "aku@gmail.com"
 async def root():
     return {"messages": emails}
 
+@app.get("/testbro")
+async def root():
+    return {"messages": "waduh"}
+
 musicname = "SAYANG.mp3"
 realmusicname = "Ngencok.mp3"
 
