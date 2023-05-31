@@ -42,7 +42,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Update with the appropriate origin
+    allow_origins=["https://music-mates.vercel.app"],  # Update with your new frontend URL
     allow_credentials=True,
     allow_methods=["GET", "POST", "OPTIONS"],  # Add other allowed methods if needed
     allow_headers=["*"],  # Update with the appropriate headers
