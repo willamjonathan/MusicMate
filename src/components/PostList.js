@@ -260,8 +260,10 @@ function PostList() {
               tweet.isLiked ? handleDislikeClick(tweet.post_id) : handleLikeClick(tweet.post_id)
             }
           >
+            
             {tweet.isLiked ? "Dislike" : "Like"}
           </button>
+          {tweet.date}
           <CommentList postId={tweet.post_id} />
           <CommentForm postId={tweet.post_id} />
           <div class ="underline-timeline">
