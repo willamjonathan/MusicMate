@@ -225,7 +225,6 @@ async def dislike_tweet(request: Request, post_id: str):
     except Exception as e:
         return {"error": str(e)}
 
-
 @app.get("/tweets")
 async def get_tweets(search_term: str = None):
     try:
@@ -250,6 +249,33 @@ async def get_tweets(search_term: str = None):
     except Exception as e:
         return {"error": str(e)}
     
+#INI BELUM PASTI KARENA BELUM DITEST
+# @app.get("/tweets")
+# async def get_tweets(search_term: str = None):
+#     try:
+#         # Get all the tweets documents from Firestore
+#         tweets_ref = db.collection("tweets")
+
+#         if search_term is not None:
+#             # Search for tweets with the given search term
+#             query = tweets_ref.where("search_term", "==", search_term)
+#             query = query.order_by("date", direction=firestore.Query.DESCENDING)
+#             tweets_docs = query.stream()
+#         else:
+#             # Get all tweets
+#             query = tweets_ref.order_by("date", direction=firestore.Query.DESCENDING)
+#             tweets_docs = query.stream()
+
+#         # Loop through all the documents and append the data to a list
+#         tweets = []
+#         for doc in tweets_docs:
+#             doc_data = doc.to_dict()
+#             tweets.append(doc_data)
+
+#         return {"tweets": tweets}
+#     except Exception as e:
+#         return {"error": str(e)}
+
 @app.post("/tweets/{post_id}/comment")
 async def add_comment_to_tweet(request: Request, post_id: str, comment: str = Body(...)):
     try:
