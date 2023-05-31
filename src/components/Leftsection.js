@@ -37,9 +37,9 @@ function LeftSelection(){
                         <FontAwesomeIcon icon={faUserCircle} />
                     </span>
                     <div class ="edit-header-navbar">
-                        <button className='edit-button'>
-                        <Link to ="/profile" className='edit-button-decoration'>CHANGE</Link>
-                        </button>
+                        <div className='edit-button'>
+                        {/* <Link to ="/profile" className='edit-button-decoration'>CHANGE</Link> */}
+                        </div>
                     </div>
                 </div>
                 <div class="home-navbar choice">

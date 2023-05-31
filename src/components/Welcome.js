@@ -20,6 +20,15 @@ function Welcome(){
         </div>
 
         </div>
+        {/* <div class ="welcome-container">
+        <div class ="title-welcome">
+            
+            </div>
+          <div class = "picture-welcome">
+
+          </div>
+          <div class ="welcome-button"></div>
+        </div> */}
     </div>)
 
 }

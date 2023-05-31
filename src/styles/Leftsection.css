@@ -53,8 +53,9 @@
 }
 .edit-button {
   position: relative;
-  padding: 10px;
-  font-size: 1vw;
+  height: 5vh;
+  /* padding: 10px; */
+  /* font-size: 1vw;
   background-color: #a52a2a;
   width: auto;
   border-radius: 20px;
@@ -63,7 +64,7 @@
   color: white;
   left: 10%;
   margin-bottom: 5%;
-  cursor: pointer;
+  cursor: pointer; */
 }
 .edit-button-decoration {
   text-decoration: none;

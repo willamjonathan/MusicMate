@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from 'axios';
-import MusicPlayer from "./MusicPlayer";
+import '../styles/Link.css'
 
+import { Link, useNavigate } from "react-router-dom";
+import MusicPlayer from "./MusicPlayer";
+import '../styles/UserPostPage.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import {
+    faUserCircle
+} from '@fortawesome/free-solid-svg-icons'
 function UserPostPage() {
   const { username } = useParams();
 
@@ -36,12 +44,28 @@ function UserPostPage() {
   // Fetch and display user's posts using the username
 
   return (
-    <div>
-      <h1>User: {username}</h1>
-      <h1>{message}</h1>
+    <div className="UserPostPage">
+    <div className ="theupp">
+    <div class='upp-backbutton'>
+        <Link to ="/posted" className="back-btn-upp">Back</Link>
+      </div>
+      <div class =" upp-container">
+        <div class="user-posts-upp">
+          POST
+        </div>
+      <div class="upp-picture-profile">
+                    <div class ="upp-profile-logo"><FontAwesomeIcon icon={faUserCircle} /></div>
+                    </div>
+      <div class ='upp-container-details'>
+      
+      <div class ="upp-username">
+      {/* User: {username} */}
+      
+      {message}</div>
       {/* Display user's posts */}
-
-      <h1>User Songs</h1>
+      
+      <div class ="upp-posts-container">
+      {/* User Songs */}
     {songs.map((song,index) => (
 
       <MusicPlayer key={index} musicUrl={`http://localhost:8000/music/${song}`} musicName={posted[index]} />
@@ -51,7 +75,10 @@ function UserPostPage() {
       // </React.Fragment>
     ))}
     </div>
-
+    </div>
+    </div>
+    </div>
+    </div>
   );
 }
 
