@@ -156,7 +156,7 @@ form {
   transition: opacity 0.3s;
 } */
 .twt-username {
-  background-color: #9999;
+  /* background-color: #9999; */
   padding: 4px;
   width: 30%;
   /* text-align: center; */
