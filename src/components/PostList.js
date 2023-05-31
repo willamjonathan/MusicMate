@@ -5,6 +5,10 @@ import "../styles/PostListStyle.css"
 import MusicPlayer from "./MusicPlayer";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+    faUserCircle
+} from '@fortawesome/free-solid-svg-icons'
 
 function PostList() {
   const [tweets, setTweets] = useState([]);
@@ -239,7 +243,8 @@ function PostList() {
         <div key={uuidv4()}>
           <div className ="username-timeline" onClick={() => handleUsernameClick(tweet.username)}>
           {/* <h1 className="username" onClick={() => handleUsernameClick(tweet.username)}> */}
-            <div class="twt-username">{tweet.username}</div>
+          <div class ="twt-username">
+          <span class="icon-username"><FontAwesomeIcon icon={faUserCircle} /></span><span>{tweet.username}</span></div>
           {/* </h1> */}
           </div>
           <div class ="title-timeline-container">
