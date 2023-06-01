@@ -53,6 +53,8 @@ function PostList() {
       );
     }
 
+    console.log(tweets);
+
     fetchTweets();
   }, []);
 

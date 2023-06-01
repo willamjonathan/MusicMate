@@ -66,13 +66,11 @@ function UserPostPage() {
       
       <div class ="upp-posts-container">
       {/* User Songs */}
+
     {songs.map((song,index) => (
 
       <MusicPlayer key={index} musicUrl={`https://backend-musicmate-andrean2305.vercel.app/music/${song}`} musicName={posted[index]} />
-      // <React.Fragment key={index}>
-      //     <MusicPlayer musicUrl={`http://localhost:8000/music/${song.hashedName}`} />
-      //     <p>{song.realName}</p>
-      // </React.Fragment>
+
     ))}
     </div>
     </div>
