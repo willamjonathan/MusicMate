@@ -40,10 +40,10 @@ session = Session()
 
 app = FastAPI()
 
-@app.get("/")
-async def root():
-    # logging.debug("Inside the root endpoint")  # Add logging statements to track the flow of execution
-    return {"messages": "waduh"}
+@app.get("/api/test")
+async def test_endpoint():
+    return {"message": "API endpoint accessed"}
+
 
 
 # app.add_middleware(
