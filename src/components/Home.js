@@ -173,7 +173,7 @@ function Home(){
                                 </div>,
                 <div key={2} class ="viral-flex">
                             <div class ="music-viral key2 ">
-                                <div class="picture-viral will">
+                                <div class="picture-viral will2">
                                     
                                 </div>
                                 <div class="title-viral">
@@ -184,7 +184,7 @@ function Home(){
                                 </div>
                             </div>
                             <div class ="music-viral key2">
-                                <div class="picture-viral andrean">
+                                <div class="picture-viral andrean2">
                                 </div>
                                 <div class="title-viral">
                                     Fried  Rice
@@ -194,7 +194,7 @@ function Home(){
                                 </div>    
                             </div>
                             <div class ="music-viral key2">
-                            <div class="picture-viral josh">
+                            <div class="picture-viral josh2">
                                 </div>
                                 <div class="title-viral">
                                 Fried Tempura
@@ -204,11 +204,11 @@ function Home(){
                                 </div>
                             </div>
                             <div class ="music-viral key2">
-                            <div class="picture-viral sir">
+                            <div class="picture-viral sir2">
 
                             </div>
                             <div class="title-viral">
-                                Fried Asparagu
+                                Fried Asparagus
                             </div>
                             <div class ="artist-viral">
                                 Bagus
@@ -217,7 +217,7 @@ function Home(){
                         </div>,
                 <div key={3} class ="viral-flex">
                             <div class ="music-viral key3">
-                                <div class="picture-viral will">
+                                <div class="picture-viral will3">
                                     
                                 </div>
                                 <div class="title-viral">
@@ -228,7 +228,7 @@ function Home(){
                                 </div>
                             </div>
                             <div class ="music-viral key3">
-                                <div class="picture-viral andrean">
+                                <div class="picture-viral andrean3">
                                 </div>
                                 <div class="title-viral">
                                     Supermie
@@ -238,7 +238,7 @@ function Home(){
                                 </div>    
                             </div>
                             <div class ="music-viral key3">
-                            <div class="picture-viral josh">
+                            <div class="picture-viral josh3">
                                 </div>
                                 <div class="title-viral">
                                 Popmie
@@ -248,7 +248,7 @@ function Home(){
                                 </div>
                             </div>
                             <div class ="music-viral key3">
-                            <div class="picture-viral sir">
+                            <div class="picture-viral sir3">
 
                             </div>
                             <div class="title-viral">

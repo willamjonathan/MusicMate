@@ -121,6 +121,54 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.will3 {
+  background-image: url("../img/profilecreators/mie/indomie.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.josh3 {
+  background-image: url("../img/profilecreators/mie/popmie.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.andrean3 {
+  background-image: url("../img/profilecreators/mie/supermie.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sir3 {
+  background-image: url("../img/profilecreators/mie/mie korea.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.will2 {
+  background-image: url("../img/profilecreators/fried/chicken.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.josh2 {
+  background-image: url("../img/profilecreators/fried/rice.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.andrean2 {
+  background-image: url("../img/profilecreators/fried/tempura.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sir2 {
+  background-image: url("../img/profilecreators/fried/asparagus.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .singer-storyline1 {
   background-image: url("../img/news/singer1.png");
