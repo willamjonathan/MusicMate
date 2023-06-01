@@ -42,6 +42,8 @@ session = Session()
 app = FastAPI(docs_url="/docs", redoc_url="/redoc")
 
 import logging
+import uvicorn
+
 
 # Set up the logging configuration
 logging.basicConfig(level=logging.DEBUG)  # Configure the logging level as per your requirement
