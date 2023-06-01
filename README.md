@@ -1,14 +1,15 @@
 <h1>MUSICMATE</h1>
 <h2>Background:</h2><br>
-Music-Mate is an application that intends to connect music creators and music enjoyers through a unique music-based platform. In MusicMate, users can listen to their music choice, but with that, they have the ability to give comments and react to it similar to  the way of social media. Besides that, MusicMate also provides a simple interface for musicians to test out their music using the Live-Produce feature. 
-The application offers a comprehensive platform for musicians to showcase their talents. By uploading their original compositions, musicians can easily share their music with a wide audience of music enthusiasts. This allows them to gain exposure, build a fan base, and receive valuable feedback on their work.<br>
-One of the key features of MusicMate is its collaboration functionality. Musicians can connect with other artists, regardless of their location, to work on joint projects. This opens up endless possibilities for musicians to explore new genres, experiment with different sounds, and create unique compositions by leveraging the collective talent and creativity of the MusicMate community. 
-The application also provides a commenting system, enabling users to offer constructive feedback and engage in discussions about various musical compositions. This fosters a supportive and collaborative environment where musicians can learn from each other, exchange ideas, and grow as artists. In addition to connecting musicians, MusicMate offers a feature-rich music production toolset. The built-in production tools allow musicians to create music directly within the application. <br>
-Overall, MusicMate aims to revolutionize how music creators connect and collaborate, fostering a vibrant community that celebrates creativity and provides a platform for musicians to thrive. Whether it's sharing music, collaborating with other artists, receiving feedback, or producing music, MusicMate is poised to become a go-to application for musicians seeking to expand their reach and connect with a global audience.<br>
+Music-Mate is an innovative music application that connects music creators and listeners. Users can listen to music, post their own compositions (supporting MP3, WAV, and OGG file formats), and engage with the music through comments and reactions. The app emphasizes collaboration, enabling musicians to connect with others globally and explore new genres. It also provides a supportive environment with constructive feedback and discussions. Music-Mate includes a feature-rich music production toolset for creating music within the app. Overall, Music-Mate revolutionizes music connection and collaboration, offering a platform for musicians to thrive and connect with a global audience.<br>
 <h2>Team Members:</h2><br>
-We are all undergraduate students from Bina Nusantara International University, and our member consists of:<br>
+We are all undergraduate students from Bina Nusantara International University. Our team name is the JAW and our member consists of:<br>
 1. William Jonathan Mulyadi<br>
 2. Andrean Hasan<br>
 3. Joshua Alexander<br>
-<h1>Video Demonstration:</h1><br>
+<h2>Tools: ( a brief explanation )</h2>:<br>
+To begin with, our initial step was to establish the design of our project. After that, we utilized Figma to create a prototype before proceeding with further development. Simultaneously, we made a decision regarding the web app architecture we would employ. Considering the small scale of our application, cost-effectiveness, and minimal resource requirements, we opted for a monolithic architecture.<br>
+
+Once the prototype was completed and the architecture was determined, we proceeded to divide the tasks. For the frontend, we established a development environment using React JS. In terms of the API, we chose to build our own from scratch. Our custom API, known as the JAW API, is based on FastAPI.
+Lastly, for the backend, we concluded that implementing Firebase would be the most suitable choice. Its simplicity aligns well with the NoSQL approach we aimed to incorporate.<br>
+<h2>Video Demonstration:</h2><br>
 LINK : 
