@@ -3,3 +3,4 @@ firebase-admin==6.1.0
 sqlalchemy==2.0.13
 passlib== 1.7.4
 pyjwt==2.7.0
+uvicorn==0.22.0
