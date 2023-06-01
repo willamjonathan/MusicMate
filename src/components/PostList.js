@@ -20,7 +20,7 @@ function PostList() {
 
   const handleUsernameClick =async (username) => {
     try {
-      const url = `http://localhost:8000/ChooseNow?email=${encodeURIComponent(username)}`;
+      const url = `https://backend-musicmate-andrean2305.vercel.app/ChooseNow?email=${encodeURIComponent(username)}`;
       const response = await fetch(url, {
         method: "POST",
         credentials: "include", // Include cookies in the request
@@ -44,7 +44,7 @@ function PostList() {
 
   useEffect(() => {
     async function fetchTweets() {
-      const response = await fetch("http://localhost:8000/tweets", {
+      const response = await fetch("https://backend-musicmate-andrean2305.vercel.app/tweets", {
         credentials: "include", // include cookies in the request
       });
       const data = await response.json();
@@ -72,7 +72,7 @@ function PostList() {
   const handleLikeClick = async (docId) => {
     try {
       const response = await fetch(
-        `http://localhost:8000/tweets/${docId}/like`,
+        `https://backend-musicmate-andrean2305.vercel.app/tweets/${docId}/like`,
         {
           method: "POST",
           credentials: "include",
@@ -100,7 +100,7 @@ function PostList() {
   const handleDislikeClick = async (docId) => {
     try {
       const response = await fetch(
-        `http://localhost:8000/tweets/${docId}/dislike`,
+        `https://backend-musicmate-andrean2305.vercel.app/tweets/${docId}/dislike`,
         {
           method: "POST",
           credentials: "include",
@@ -126,7 +126,7 @@ function PostList() {
 
   const addCommentToTweet = async (postId, comment) => {
   try {
-      const response = await fetch(`http://localhost:8000/tweets/${postId}/comment`, {
+      const response = await fetch(`https://backend-musicmate-andrean2305.vercel.app/tweets/${postId}/comment`, {
         method: "POST",
         credentials: "include",
         body: JSON.stringify(comment),
@@ -150,7 +150,7 @@ function PostList() {
     useEffect(() => {
       const fetchComments = async () => {
         try {
-          const response = await fetch(`http://localhost:8000/tweets/${postId}/comments`);
+          const response = await fetch(`https://backend-musicmate-andrean2305.vercel.app/tweets/${postId}/comments`);
           const data = await response.json();
           if (Array.isArray(data)) {
             setComments(data);
@@ -256,7 +256,7 @@ function PostList() {
           <div class ="music-title">{tweet.musicName}</div>
 
 
-          <MusicPlayer musicUrl={`http://localhost:8000/music/${tweet.music}`} /></div></div>
+          <MusicPlayer musicUrl={`https://backend-musicmate-andrean2305.vercel.app/music/${tweet.music}`} /></div></div>
           <div className="love-container">
             <span>{tweet.love}</span>
             <span className="love-symbol">❤️</span>

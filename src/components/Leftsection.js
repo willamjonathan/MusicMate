@@ -14,7 +14,7 @@ function LeftSelection(){
 
     useEffect(() => {
         const fetchMessage = async () => {
-            const response = await axios.get('http://localhost:8000/');
+            const response = await axios.get('https://backend-musicmate-andrean2305.vercel.app/');
             setMessage(response.data.messages);
         };
         fetchMessage();

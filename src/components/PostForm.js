@@ -16,7 +16,7 @@ function PostForm() {
 
   useEffect(() => {
     const fetchMessage = async () => {
-      const response = await axios.get('http://localhost:8000/');
+      const response = await axios.get('https://backend-musicmate-andrean2305.vercel.app/');
       setMessage(response.data.messages);
     };
     fetchMessage();
@@ -34,7 +34,7 @@ function PostForm() {
         formData.append('file', file);
 
         // Send a POST request to the backend /upload/music endpoint for file upload
-        const fileResponse = await fetch('http://localhost:8000/upload/music', {
+        const fileResponse = await fetch('https://backend-musicmate-andrean2305.vercel.app/upload/music', {
           method: 'POST',
           headers: {
 
@@ -64,7 +64,7 @@ function PostForm() {
       console.log('Access Token:', token);
 
       // Send a POST request to the backend /tweets endpoint for tweet submission
-      const tweetResponse = await fetch('http://localhost:8000/tweets', {
+      const tweetResponse = await fetch('https://backend-musicmate-andrean2305.vercel.app/tweets', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -79,7 +79,7 @@ function PostForm() {
         throw new Error(`Tweet submission failed! HTTP error - status: ${tweetResponse.status}`);
       }
 
-      const response = await fetch('http://localhost:8000/userPost', {
+      const response = await fetch('https://backend-musicmate-andrean2305.vercel.app/userPost', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
