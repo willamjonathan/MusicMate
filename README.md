@@ -1,12 +1,12 @@
 <h1>MUSICMATE</h1>
 <h2>Background:</h2><br>
 Music-Mate is an innovative music application that connects music creators and listeners. Users can listen to music, post their own compositions (supporting MP3, WAV, and OGG file formats), and engage with the music through comments and reactions. The app emphasizes collaboration, enabling musicians to connect with others globally and explore new genres. It also provides a supportive environment with constructive feedback and discussions. Music-Mate includes a feature-rich music production toolset for creating music within the app. Overall, Music-Mate revolutionizes music connection and collaboration, offering a platform for musicians to thrive and connect with a global audience.<br>
-<h2>Team Members:</h2><br>
+<h2>Team Members</h2><br>
 We are all undergraduate students from Bina Nusantara International University. Our team name is the JAW and our member consists of:<br>
 1. William Jonathan Mulyadi<br>
 2. Andrean Hasan<br>
 3. Joshua Alexander<br>
-<h2>Tools: ( a brief explanation )</h2>:<br>
+<h2>Tools ( a brief explanation )</h2><br>
 To begin with, our initial step was to establish the design of our project. After that, we utilized Figma to create a prototype before proceeding with further development. Simultaneously, we made a decision regarding the web app architecture we would employ. Considering the small scale of our application, cost-effectiveness, and minimal resource requirements, we opted for a monolithic architecture.<br>
 
 Once the prototype was completed and the architecture was determined, we proceeded to divide the tasks. For the frontend, we established a development environment using React JS. In terms of the API, we chose to build our own from scratch. Our custom API, known as the JAW API, is based on FastAPI.
