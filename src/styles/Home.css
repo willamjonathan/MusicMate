@@ -100,8 +100,32 @@
   background-repeat: no-repeat;
 }
 
-.singer-storyline {
-  background-image: url("../img/Singer.jpeg");
+.singer-storyline1 {
+  background-image: url("../img/news/singer1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.singer-storyline2 {
+  background-image: url("../img/news/singer2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.singer-storyline3 {
+  background-image: url("../img/news/singer5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.singer-storyline4 {
+  background-image: url("../img/news/singer4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.singer-storyline5 {
+  background-image: url("../img/news/singer3.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -186,6 +210,7 @@
   font-size: 2.2vw;
   text-align: center;
   font-weight: 700;
+  margin-bottom: 1%;
 }
 
 .berita-detail {
@@ -234,6 +259,22 @@
   position: relative;
   left: 45%;
   top: -70%; */
+}
+.forward {
+  width: auto;
+  padding: 1%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: 10%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+.forward:hover {
+  opacity: 75%;
+  background-color: gray;
+  color: white;
 }
 .whitespace {
   margin-top: 5%;
