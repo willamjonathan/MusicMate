@@ -26,7 +26,7 @@ function Login() {
       const loginData = { email, password };
 
       try {
-        const response = await fetch("https://music-mates.vercel.app/api/login", {
+        const response = await fetch("https://backend-musicmate-andrean2305.vercel.app/login", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify(loginData),
@@ -61,7 +61,7 @@ function Login() {
       const signupData = { email, password };
 
       try {
-        const response = await fetch("https://music-mates.vercel.app/api/signup", {
+        const response = await fetch("https://backend-musicmate-andrean2305.vercel.app/signup", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(signupData),
