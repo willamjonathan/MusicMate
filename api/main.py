@@ -48,9 +48,8 @@ logging.basicConfig(level=logging.DEBUG)  # Configure the logging level as per y
 
 @app.get("/testbro")
 async def root():
-    logging.debug("Inside the root endpoint")  # Add logging statements to track the flow of execution
+    # logging.debug("Inside the root endpoint")  # Add logging statements to track the flow of execution
     return {"messages": "waduh"}
-
 
 app.add_middleware(
     CORSMiddleware,
@@ -61,8 +60,11 @@ app.add_middleware(
 )
 
 # Initialize Firebase Admin SDK
-cred = credentials.Certificate("Service.json")
-firebase_admin.initialize_app(cred)
+cred = credentials.Certificate("api/Service.json")
+try:
+    default_app = firebase_admin.get_app()
+except ValueError:
+    default_app = firebase_admin.initialize_app(cred)
 
 print(cred)
 # Get a Firestore client
@@ -535,3 +537,8 @@ async def save_music(music: MusicInput):
     #     f.write(music.MusicScript)
     
     return {"message": "Music script saved successfully"}
+
+import uvicorn
+
+if __name__ == "__main__":
+  uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
