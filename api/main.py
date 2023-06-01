@@ -44,39 +44,37 @@ app = FastAPI()
 async def test_endpoint():
     return {"message": "API endpoint accessed"}
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Update with your new frontend URL
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "OPTIONS"],  # Add other allowed methods if needed
+    allow_headers=["*"],  # Update with the appropriate headers
+)
 
+# Initialize Firebase Admin SDK
+cred = credentials.Certificate("api/Service.json")
+try:
+    default_app = firebase_admin.get_app()
+except ValueError:
+    default_app = firebase_admin.initialize_app(cred)
 
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=["*"],  # Update with your new frontend URL
-#     allow_credentials=True,
-#     allow_methods=["GET", "POST", "OPTIONS"],  # Add other allowed methods if needed
-#     allow_headers=["*"],  # Update with the appropriate headers
-# )
+print(cred)
+# Get a Firestore client
+db = firestore.client()
 
-# # Initialize Firebase Admin SDK
-# cred = credentials.Certificate("api/Service.json")
-# try:
-#     default_app = firebase_admin.get_app()
-# except ValueError:
-#     default_app = firebase_admin.initialize_app(cred)
-
-# print(cred)
-# # Get a Firestore client
-# db = firestore.client()
-
-# class User(BaseModel):
-#     email: str
-#     password: str
+class User(BaseModel):
+    email: str
+    password: str
     
-# emails = "aku@gmail.com"
+emails = "aku@gmail.com"
 
-# @app.get("/")
-# async def root():
-#     return {"messages": emails}
+@app.get("/")
+async def root():
+    return {"messages": emails}
 
-# musicname = "SAYANG.mp3"
-# realmusicname = "Ngencok.mp3"
+musicname = "SAYANG.mp3"
+realmusicname = "Ngencok.mp3"
 
 # @app.post("/upload/music")
 # async def upload_music(request: Request, file: UploadFile = File(None)):
@@ -155,40 +153,40 @@ async def test_endpoint():
 # today = datetime.today()
 # formatted_date = today.strftime("%d/%m/%Y")
 
-# @app.post("/tweets")
-# async def add_tweets(request: Request, data: dict = Body(...)):
-#     global musicname
-#     global realmusicname
-#     global formatted_date
-#     try:
-#         search_term = data["search_term"]
-#         tweet = data["tweets"][0]["text"]
-#         love = 0
-#         email = emails
-#         print(email)
+@app.post("/tweets")
+async def add_tweets(request: Request, data: dict = Body(...)):
+    global musicname
+    global realmusicname
+    global formatted_date
+    try:
+        search_term = data["search_term"]
+        tweet = data["tweets"][0]["text"]
+        love = 0
+        email = emails
+        print(email)
 
-#         # Generate a unique ID for the document
-#         doc_id = str(uuid.uuid4())
-#         post_id = str(uuid.uuid4())
+        # Generate a unique ID for the document
+        doc_id = str(uuid.uuid4())
+        post_id = str(uuid.uuid4())
 
-#         print(musicname)
-#         # Set the document in Firestore with the generated ID
-#         doc_ref = db.collection("tweets").document(doc_id)
-#         doc_ref.set({
-#             "search_term": search_term,
-#             "tweets": [{"text": tweet}],
-#             "love": love,
-#             "post_id": post_id,
-#             "username": email,
-#             "music": musicname,
-#             "musicName": realmusicname,
-#             "date": formatted_date
-#         })
+        print(musicname)
+        # Set the document in Firestore with the generated ID
+        doc_ref = db.collection("tweets").document(doc_id)
+        doc_ref.set({
+            "search_term": search_term,
+            "tweets": [{"text": tweet}],
+            "love": love,
+            "post_id": post_id,
+            "username": email,
+            "music": musicname,
+            "musicName": realmusicname,
+            "date": formatted_date
+        })
 
-#         # realmusicname = ""
-#         return {"message": f"Tweets for {search_term} added successfully with ID {doc_id}"}
-#     except Exception as e:
-#         return {"error": str(e)}
+        # realmusicname = ""
+        return {"message": f"Tweets for {search_term} added successfully with ID {doc_id}"}
+    except Exception as e:
+        return {"error": str(e)}
     
 # @app.post("/tweets/{post_id}/like")
 # async def add_like_to_tweet(request: Request, post_id: str):
