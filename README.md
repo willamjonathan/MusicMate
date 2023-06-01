@@ -17,7 +17,7 @@ Once the prototype was completed and the architecture was determined, we proceed
 As for the backend, we concluded that implementing Firebase would be the most suitable choice. Its simplicity aligns well with the NoSQL approach we aimed to incorporate.Lastly, we deploy our website using Vercel.<br>
 <h2>Requirements</h2>
 <br>
-Here are the tools we used to create and run MusicMate:
+Here are the tools we used to create and run MusicMate:<br>
 <ul>
   <li>ReactJS</li>
   <li>Firebase</li>
