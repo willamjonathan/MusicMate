@@ -10,6 +10,8 @@ import { Link, useNavigate } from "react-router-dom";
 function Home(){
     const[search,setSearch]=useState("");
     const [content, setContent] = useState(0);
+    const [viral, setViral] = useState(0);
+// BERITA
     const contents = [
 
       <div key ={1} class ="berita-isi">
@@ -123,6 +125,150 @@ function Home(){
     const handleBackwardClick = () => {
       setContent((prevContent) => (prevContent === 0 ? contents.length - 1 : prevContent - 1));
     };
+// VIRAL
+    const virals = [
+        <div key={1} class ="viral-flex">
+                                    <div class ="music-viral key1 ">
+                                        <div class="picture-viral will">
+                                            
+                                        </div>
+                                        <div class="title-viral">
+                                            Do re mi 
+                                        </div>
+                                        <div class ="artist-viral">
+                                            William
+                                        </div>
+                                    </div>
+                                    <div class ="music-viral key1 ">
+                                        <div class="picture-viral andrean">
+                                        </div>
+                                        <div class="title-viral">
+                                            satu dua tiga
+                                        </div>
+                                        <div class ="artist-viral">
+                                            Andrean
+                                        </div>    
+                                    </div>
+                                    <div class ="music-viral key1">
+                                    <div class="picture-viral josh">
+                                        </div>
+                                        <div class="title-viral">
+                                        4 sehat
+                                        </div>
+                                        <div class ="artist-viral">
+                                            Joshua
+                                        </div>
+                                    </div>
+                                    <div class ="music-viral key1">
+                                    <div class="picture-viral sir">
+
+                                    </div>
+                                    <div class="title-viral">
+                                        quiz dadakan
+                                    </div>
+                                    <div class ="artist-viral">
+                                        Bagus
+                                    </div>
+                                    </div>
+                                </div>,
+                <div key={2} class ="viral-flex">
+                            <div class ="music-viral key2 ">
+                                <div class="picture-viral will">
+                                    
+                                </div>
+                                <div class="title-viral">
+                                    Fried Chicken 
+                                </div>
+                                <div class ="artist-viral">
+                                    William
+                                </div>
+                            </div>
+                            <div class ="music-viral key2">
+                                <div class="picture-viral andrean">
+                                </div>
+                                <div class="title-viral">
+                                    Fried  Rice
+                                </div>
+                                <div class ="artist-viral">
+                                    Andrean
+                                </div>    
+                            </div>
+                            <div class ="music-viral key2">
+                            <div class="picture-viral josh">
+                                </div>
+                                <div class="title-viral">
+                                Fried Tempura
+                                </div>
+                                <div class ="artist-viral">
+                                    Joshua
+                                </div>
+                            </div>
+                            <div class ="music-viral key2">
+                            <div class="picture-viral sir">
+
+                            </div>
+                            <div class="title-viral">
+                                Fried Asparagu
+                            </div>
+                            <div class ="artist-viral">
+                                Bagus
+                            </div>
+                            </div>
+                        </div>,
+                <div key={3} class ="viral-flex">
+                            <div class ="music-viral key3">
+                                <div class="picture-viral will">
+                                    
+                                </div>
+                                <div class="title-viral">
+                                    Indomie 
+                                </div>
+                                <div class ="artist-viral">
+                                    William
+                                </div>
+                            </div>
+                            <div class ="music-viral key3">
+                                <div class="picture-viral andrean">
+                                </div>
+                                <div class="title-viral">
+                                    Supermie
+                                </div>
+                                <div class ="artist-viral">
+                                    Andrean
+                                </div>    
+                            </div>
+                            <div class ="music-viral key3">
+                            <div class="picture-viral josh">
+                                </div>
+                                <div class="title-viral">
+                                Popmie
+                                </div>
+                                <div class ="artist-viral">
+                                    Joshua
+                                </div>
+                            </div>
+                            <div class ="music-viral key3">
+                            <div class="picture-viral sir">
+
+                            </div>
+                            <div class="title-viral">
+                               Mie Korea
+                            </div>
+                            <div class ="artist-viral">
+                                Bagus
+                            </div>
+                            </div>
+    </div>
+      ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          setViral((prevViral) => (prevViral === virals.length+1  ? 0 : prevViral + 2)); 
+            // || prevViral === virals.length+5 ? 0 : prevViral + 1));
+        }, 3500); // interval
+    
+        return () => clearInterval(interval);
+      }, []);
 
     return(
         <div>
@@ -137,67 +283,23 @@ function Home(){
                             <div class ="viral-text">
                                     VIRAL
                                 </div>
-                                <div class="underline-viral">
-                                <div class ="viral-flex">
-                                    <div class ="music-viral ">
-                                        <div class="picture-viral will">
-                                            
+                                <div className="underline-viral">
+                               
+                                    {virals.map((item, index) => {
+                                   
+                                    return (
+                                        <div
+                                        key={index}
+                                        className={`viral-flex ${index === viral ? 'active' : ''}`}
+                                        style={{ transform: `translateX(${(index - viral) * 100}%)` }}
+                                    >
+                                        {item}
                                         </div>
-                                        <div class="title-viral">
-                                            Do re mi 
-                                        </div>
-                                        <div class ="artist-viral">
-                                            William
-                                        </div>
-                                    </div>
-                                    <div class ="music-viral ">
-                                        <div class="picture-viral andrean">
-                                        </div>
-                                        <div class="title-viral">
-                                            satu dua tiga
-                                        </div>
-                                        <div class ="artist-viral">
-                                            Andrean
-                                        </div>    
-                                    </div>
-                                    <div class ="music-viral">
-                                    <div class="picture-viral josh">
-                                        </div>
-                                        <div class="title-viral">
-                                        4 sehat
-                                        </div>
-                                        <div class ="artist-viral">
-                                            Joshua
-                                        </div>
-                                    </div>
-                                    <div class ="music-viral">
-                                    <div class="picture-viral sir">
-
-                                    </div>
-                                    <div class="title-viral">
-                                        quiz dadakan
-                                    </div>
-                                    <div class ="artist-viral">
-                                        Bagus
-                                    </div>
-                                    
-                                    </div>
-                                    {/* <div class ="music-viral">
-                                    <div class="picture-viral sir">
-
-                                    </div>
-                                    <div class="title-viral">
-                                        quiz dadakan
-                                    </div>
-                                    <div class ="artist-viral">
-                                        Bagus
-                                    </div>
-                                    
-                                    </div> */}
-                                </div>
-                            
-                                
+                                    );
+                                    })}
+                                    {/* {virals[viral]} */}
                             </div>
+                            
                             </div>
                     </div>
                 </div>
