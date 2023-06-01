@@ -531,7 +531,7 @@ async def save_music(music: MusicInput):
     # You can use music.MusicScript and music.MusicName to access the input values
     # Implement your logic here to handle the music script storage
     # For example, you can save the music script to a file
-    with open(f"{music.MusicName}.txt", "w") as f:
-        f.write(music.MusicScript)
+    # with open(f"{music.MusicName}.txt", "w") as f:
+    #     f.write(music.MusicScript)
     
     return {"message": "Music script saved successfully"}
