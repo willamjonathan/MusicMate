@@ -45,3 +45,5 @@ app = FastAPI(docs_url="/docs", redoc_url="/redoc")
 async def root():
     # logging.debug("Inside the root endpoint")  # Add logging statements to track the flow of execution
     return {"messages": "waduh"}
+
+print("a")
