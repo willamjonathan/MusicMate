@@ -18,7 +18,7 @@ function UserPostPage() {
 
   useEffect(() => {
     const fetchMessage = async () => {
-      const response = await axios.get('http://localhost:8000/Choose');
+      const response = await axios.get('https://backend-musicmate-andrean2305.vercel.app/Choose');
       setMessage(response.data.messages);
     };
     fetchMessage();
@@ -30,7 +30,7 @@ function UserPostPage() {
   useEffect(() => {
     const fetchSongs = async () => {
       try {
-        const response = await axios.post("http://localhost:8000/TakeNow");
+        const response = await axios.post("https://backend-musicmate-andrean2305.vercel.app/TakeNow");
         setSongs(response.data.songs);
         setPosted(response.data.posted);
       } catch (error) {
@@ -66,13 +66,11 @@ function UserPostPage() {
       
       <div class ="upp-posts-container">
       {/* User Songs */}
+
     {songs.map((song,index) => (
 
-      <MusicPlayer key={index} musicUrl={`http://localhost:8000/music/${song}`} musicName={posted[index]} />
-      // <React.Fragment key={index}>
-      //     <MusicPlayer musicUrl={`http://localhost:8000/music/${song.hashedName}`} />
-      //     <p>{song.realName}</p>
-      // </React.Fragment>
+      <MusicPlayer key={index} musicUrl={`https://backend-musicmate-andrean2305.vercel.app/music/${song}`} musicName={posted[index]} />
+
     ))}
     </div>
     </div>

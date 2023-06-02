@@ -26,11 +26,12 @@ function Login() {
       const loginData = { email, password };
 
       try {
-        const response = await fetch("http://localhost:8000/login", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(loginData),
-        });
+        const response = await fetch("https://backend-musicmate-andrean2305.vercel.app/login", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(loginData),
+});
+
 
         if (response.ok) {
           const data = await response.json();
@@ -60,13 +61,15 @@ function Login() {
       const signupData = { email, password };
 
       try {
-        const response = await fetch("http://localhost:8000/signup", {
+        const response = await fetch("https://backend-musicmate-andrean2305.vercel.app/signup", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(signupData),
         });
 
+        console.log("FAK");
         if (response.ok) {
+          console.log("FAKerrr");
           const data = await response.json();
           console.log(data.message);
           setErrorMessage("");
@@ -78,6 +81,11 @@ function Login() {
           // Example: Display success message
           // setSuccessMessage(data.message);
         } else {
+          console.log("Response status:", response.status);
+          console.log("Response status text:", response.statusText);
+      
+          const errorBody = await response.json();
+          console.log("Response body:", errorBody);
           throw new Error("User already exist");
         }
       } catch (error) {
