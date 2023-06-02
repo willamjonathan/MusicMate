@@ -36,9 +36,6 @@ function PostForm() {
         // Send a POST request to the backend /upload/music endpoint for file upload
         const fileResponse = await fetch('https://backend-musicmate-andrean2305.vercel.app/upload/music', {
           method: 'POST',
-          headers: {
-
-          },
           body: formData,
         });
 

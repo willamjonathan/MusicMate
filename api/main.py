@@ -53,7 +53,7 @@ app.add_middleware(
 )
 
 # Initialize Firebase Admin SDK
-cred = credentials.Certificate("api/Service.json")
+cred = credentials.Certificate("Service.json")
 try:
     default_app = firebase_admin.get_app()
 except ValueError:
