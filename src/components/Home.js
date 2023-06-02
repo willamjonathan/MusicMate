@@ -7,11 +7,36 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 
+
 function Home(){
     const[search,setSearch]=useState("");
     const [content, setContent] = useState(0);
     const [viral, setViral] = useState(0);
 // BERITA
+const navigate = useNavigate();
+    const handleUsernameClick =async (username) => {
+        try {
+        const url = `http://localhost:8000/ChooseNow?email=${encodeURIComponent(username)}`;
+        const response = await fetch(url, {
+            method: "POST",
+            credentials: "include", // Include cookies in the request
+            headers: {
+            "Content-Type": "application/json",
+            },
+        });
+    
+        // Handle the response data
+        const data = await response.json();
+        console.log(data); // Assuming the response contains the songs data
+    
+        // Do any necessary UI updates based on the response data
+        } catch (error) {
+        // Handle any errors
+        console.error(error);
+        }
+        navigate(`/user-post-page`);
+
+    };
     const contents = [
 
       <div key ={1} class ="berita-isi">
@@ -139,7 +164,7 @@ function Home(){
                                             William
                                         </div>
                                     </div>
-                                    <div class ="music-viral key1 ">
+                                    <div class ="music-viral key1 " onClick={() => handleUsernameClick("andrean@gmail.com")}>
                                         <div class="picture-viral andrean">
                                         </div>
                                         <div class="title-viral">
@@ -183,7 +208,7 @@ function Home(){
                                     William
                                 </div>
                             </div>
-                            <div class ="music-viral key2">
+                            <div class ="music-viral key2" onClick={() => handleUsernameClick("andrean@gmail.com")}>
                                 <div class="picture-viral andrean2">
                                 </div>
                                 <div class="title-viral">
@@ -227,7 +252,7 @@ function Home(){
                                     William
                                 </div>
                             </div>
-                            <div class ="music-viral key3">
+                            <div class ="music-viral key3" onClick={() => handleUsernameClick("andrean@gmail.com")}>
                                 <div class="picture-viral andrean3">
                                 </div>
                                 <div class="title-viral">
