@@ -33,6 +33,7 @@ function UserPostPage() {
         const response = await axios.post("https://backend-musicmate-andrean2305.vercel.app/TakeNow");
         setSongs(response.data.songs);
         setPosted(response.data.posted);
+        
       } catch (error) {
         console.error(error);
       }
@@ -67,11 +68,14 @@ function UserPostPage() {
       <div class ="upp-posts-container">
       {/* User Songs */}
 
-    {songs.map((song,index) => (
+    {songs && songs.length > 0 ? (
+      songs.map((song,index) => (
 
-      <MusicPlayer key={index} musicUrl={`https://backend-musicmate-andrean2305.vercel.app/music/${song}`} musicName={posted[index]} />
-
-    ))}
+        <MusicPlayer key={index} musicUrl={`https://backend-musicmate-andrean2305.vercel.app/music/${song}`} musicName={posted[index]} />
+      ))
+      ) : (
+        <p>No songs available</p>
+      )}
     </div>
     </div>
     </div>
