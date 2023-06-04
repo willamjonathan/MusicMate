@@ -27,7 +27,5 @@ Here are the tools we used to create and run MusicMate:<br>
   <li>Github</li>
   <li>Visual Studio Code</li>
 </ul>
-<h2>Challenges</h2>
-
 <h2>Video Demonstration</h2><br>
 LINK : https://drive.google.com/file/d/1q23lOkdcsUUYyN4JElrI5TDVCQOokqSe/view?usp=drive_link
